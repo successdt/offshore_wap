@@ -34,28 +34,29 @@
 <div id="wrapper">
 
 	<div id="logo">
-		
+		<a href="<?php bloginfo('rss2_url'); ?>" class="mobile_rss"><img src="<?php bloginfo('template_directory'); ?>/images/mobile_rss.gif" border="0" alt="Subscribe" /></a>
 		<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/logo.png" /></a>
 	</div>
 	<div class="navbar">
+		<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/icon_home.png" /></a>
 		<?php 
 		if ( function_exists( 'wp_nav_menu' ) ){
 			wp_nav_menu( array( 'theme_location' => 'primary-menu', 'container_id' => 'topMenu', 'container_class' => 'ddsmoothmenu', 'fallback_cb'=>'primarymenu') );
 		}else{
 			primarymenu();
 		}?>
-		<a href="<?php bloginfo('rss2_url'); ?>" class="mobile_rss"><img src="<?php bloginfo('template_directory'); ?>/images/mobile_rss.gif" border="0" alt="Subscribe" /></a>		
+				
 	</div>
 	
 		<?php
 		if ( is_category() ) {
 		  $current_cat = get_query_var('cat');
-		  $currenCat = get_the_category($current_cat);
+		  $currenCat = get_category($current_cat);
   		?>
   		<div class="sub-menu">
 			<ul>
 				<li style="font-weight: bold; color: #F9A017;">
-					<?php echo $currenCat[0]->name; ?>
+					<?php echo $currenCat->name; ?>
 				</li>
 				<?php wp_list_categories('&title_li=&child_of='.$current_cat . '&show_option_none=');?>
 			</ul>
