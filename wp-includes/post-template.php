@@ -165,6 +165,7 @@ function the_content($more_link_text = null, $stripteaser = false) {
 	$content = get_the_content($more_link_text, $stripteaser);
 	$content = apply_filters('the_content', $content);
 	$content = str_replace(']]>', ']]&gt;', $content);
+	$content = preg_replace('/\[(http:\/\/[^\s]+)\]/', '', $content);
 	echo $content;
 }
 
@@ -1457,4 +1458,32 @@ function wp_list_post_revisions( $post_id = 0, $args = null ) {
 		echo "</ul>";
 	endif;
 
+}
+
+
+/**
+ * get the desc with limit characters
+ * @author duythanhdao@live.com
+ */
+function getTheDescription(){
+	$desc = strip_tags(get_the_content());
+	$desc = preg_replace('/\[(http:\/\/[^\s]+)\]/', '', $desc);
+	if(mb_strlen($desc) > 150) {
+		$desc = mb_strcut($desc, 0, 150);
+		$exploded = explode(' ', $desc);
+		unset($exploded[count($exploded) - 1]);
+		$desc = implode(' ', $exploded);
+		$desc .= "...";
+	}
+	return $desc;
+}
+/**
+ * get download link from content()
+ * @author duythanhdao@live.com
+ */
+function getDownloadLink(){
+	$content = get_the_content();
+	preg_match('/\[(http:\/\/[^\s]+)\]/', $content, $link);
+	$link = str_replace(array('[', ']'), '', $link);
+	return $link[0];
 }

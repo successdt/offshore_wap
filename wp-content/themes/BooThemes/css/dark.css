@@ -1,0 +1,94 @@
+body { background:#333; }
+#navigation-wrapper { background-color:#252525; }
+#navigation li { text-shadow: 1px 1px 1px #000; }
+#navigation li a { color:#BBB; }
+
+#searchform input { background-color:#444; border:1px solid #555;color:#999; }
+
+.feat-item { background:#444;}
+.feat-item h2 { text-shadow: 1px 1px 1px #111; }
+.feat-item h2 a { color:#fff; }
+.feat-item .date { color:#aaa; text-shadow: 1px 1px 1px #111; }
+
+.browsing { background-color:#444; text-shadow: 1px 1px 1px #222; }
+.browsing span { font-size:12px; text-transform:uppercase; color:#999; margin-bottom:8px; display:block; }
+.browsing h1 { color:#FFF; }
+
+.post { border-bottom:1px dashed #444;}
+.post .post-title { color:#fff; text-shadow: 1px 1px 1px #111; }
+.post .post-title a { color:#FFF; text-shadow: 1px 1px 1px #111; }
+.post-meta span { color:#999; text-shadow: 1px 1px 1px #222;}
+.post-content { color:#fff; text-shadow: 1px 1px 1px #222; }
+.post-tags a { background:#444;color:#BBB; text-shadow: 1px 1px 1px #222; }
+.post-tags a:hover { background:#555; }
+
+.post-content hr { background-color: #444; color:#444; }
+.post-content blockquote { background:none; padding-left:20px; color:#888; }
+
+.review-box { background:#444; border:1px solid #555; }
+.review-box .rating-item .rating-title { color:#BBB; text-shadow: 1px 1px 1px #222; }
+.review-box .rating-item .rating-score { color:#BBB; text-shadow: 1px 1px 1px #222; }
+
+.related-posts { border-bottom:1px dashed #444; }
+.related-posts h5 { color:#BBB; text-shadow: 1px 1px 1px #222; }
+
+#sidebar .widget a { color:#BBB; text-shadow: 1px 1px 1px #222; }
+.widget h3 { color:#BBB; border-bottom:1px dashed #444; text-shadow: 1px 1px 1px #222; }
+.widget p { color:#999; text-shadow: 1px 1px 1px #222; }
+.widget li { color:#555; border-bottom:1px solid #393939;}
+.widget li .righttext { color:#999; }
+
+.widget .widget-item { border-bottom:1px solid #393939; }
+.widget .widget-item h4 a { color:#555; }
+.widget .widget-item h4 a:hover { text-decoration:none; }
+.widget .widget-item .date { color:#888; text-shadow: 1px 1px 1px #222; }
+
+.tagcloud a { background:#444; font-size:12px !important; }
+.tagcloud a:hover { background:#555; text-decoration:none; color:#BBB !important; }
+
+#twitter_update_list li { color:#999; text-shadow: 1px 1px 1px #222; }
+#twitter_update_list a { color:#999 !important; }
+#twitter_update_list span a { color:#d95b43 !important; }
+
+#footer-posts-wrapper { background-color:#444; }
+#footer-posts h3 { color:#999; text-shadow: 1px 1px 1px #222; }
+
+#sidebar .widget .tabs-wrapper ul.tabs { border-bottom:1px dashed #444;}
+#sidebar .widget .tabs-wrapper ul.tabs li { background:none; color:#888; }
+#sidebar .widget .tabs-wrapper ul.tabs li.active a { color:#BBB; }
+#sidebar .widget .tabs-wrapper ul.tabs li a { color:#777; }
+#sidebar .widget .tabs-wrapper ul.tabs li a:hover { text-decoration:none; color:#BBB; }
+
+.comments h5 { color:#BBB; text-shadow: 1px 1px 1px #222;  }
+.comment-item { background:#444; }
+.comment-item .comment-author .author { color:#BBB; text-shadow: 1px 1px 1px #222; }
+.comment-item .comment-author .date { color:#AAA; text-shadow: 1px 1px 1px #222;  }
+.comment-item .comment-author .reply { text-shadow: 1px 1px 1px #222; }
+.comment-item .comment-text p { color:#FFF; text-shadow: 1px 1px 1px #222; }
+.side-comment { color:#888; display:block; margin-bottom:6px; text-shadow: 1px 1px 1px #222; }
+
+#respond p { color:#999; text-shadow: 1px 1px 1px #222; }
+#comment-input input { color:#BBB; text-shadow: 1px 1px 1px #222; }
+#comment-input label { color:#999; text-shadow: 1px 1px 1px #222;  }
+#comment-input label .req { color:#777; }
+.input-name { background:#444; }
+.input-email { background:#444; }
+.input-website { background:#444; }
+.textarea-comment { background:#444; color:#BBB; text-shadow: 1px 1px 1px #222; }
+#comment-textarea label { color:#999; text-shadow: 1px 1px 1px #222; }
+#comment-textarea-admin label { color:#999; text-shadow: 1px 1px 1px #222; }
+.comment-submit { background:#53777a; color:#fff; }
+.comment-submit:hover { background:#374f51; }
+
+.toggle { background:#444; border:1px solid #555; }
+.toggle:hover { background:#494949; }
+.toggle a { text-shadow: 1px 1px 1px #222; color:#bbb; }
+.toggle-content { background:#444; border:1px solid #555; text-shadow: 1px 1px 1px #222;}
+
+.tabs-wrapper ul.tabs li { background:#373737; border-top:1px solid #555; border-left:1px solid #555; border-right:1px solid #555; }
+.tabs-wrapper ul.tabs li.active { background:#444; border-top:1px solid #555; border-left:1px solid #555; border-right:1px solid #555; text-shadow: 1px 1px 1px #222; }
+.tabs-wrapper ul.tabs li a { color:#BBB; }
+.tabs-wrapper .tab_content { border:1px solid #555; }
+	
+.highlight1 { background:#f6f67a; color:#222; text-shadow:none;}
+.highlight2 { background:#111; color:#fff; }

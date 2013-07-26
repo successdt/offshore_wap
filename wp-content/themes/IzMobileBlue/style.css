@@ -1,0 +1,265 @@
+/*
+Theme Name: IzMobile Blue
+Theme URI: http://wordpress.org/extend/themes/twentyeleven
+Author: IzTeam
+Author URI: http://izplay.net/
+Description: This theme using wapsite
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: wap template,theme mobile,giao dien wap
+Text Domain: izplay.net
+*/
+* {
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+}
+body {
+    color: #000000;
+    font-family: verdana,"Comic Sans MS",Helvetica,sans-serif;
+    font-size: 13px;
+}
+a:link {
+    color: #609CBE;
+    text-decoration: none;
+}
+a:visited {
+    color: #609CBE;
+    text-decoration: none;
+}
+a:hover {
+    color: #3099d4;
+    text-decoration: none;
+}
+.iz-container{
+	background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 4px #000000;
+    max-width: 640px;
+    padding: 0;
+    position: relative;
+	margin:0 auto;
+	overflow: auto;
+}
+.iz-topmenu{
+	background:#464646;
+	background-image: linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -o-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -moz-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -webkit-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -ms-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(55,55,55)),
+		color-stop(0.68, rgb(70,70,70))
+	);
+    color: #EEEEEE;
+    font-size: 12px;
+    position: relative;
+}
+.iz-topmenu .iz-menu-ul{
+	background:#464646;
+	background-image: linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -o-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -moz-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -webkit-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+	background-image: -ms-linear-gradient(bottom, rgb(55,55,55) 44%, rgb(70,70,70) 68%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(55,55,55)),
+		color-stop(0.68, rgb(70,70,70))
+	);
+	list-style: none outside none;
+    margin: 0;
+	float:left;
+}
+.iz-topmenu .iz-menu-ul li{
+	float: left;
+}
+.iz-topmenu .iz-menu-ul li:hover{
+	background :linear-gradient(to top, #3A3A3A, #222222) repeat scroll 0 0 #222222;
+	background:#3A3A3A;
+}
+.iz-topmenu .iz-menu-ul li a{
+    border-right: 1px solid #333333;
+    color: #EEEEEE;
+    margin: 0;
+    padding: 0 5px 2px;
+	display:block;
+	line-height:25px;
+}
+
+.iz-search{
+	position:relative;
+}
+.iz-search .iz-search-input {
+    border: 0 dashed #333333;
+    border-radius: 8px 0px 0px 8px;
+    color: #444444;
+    float: left;
+    font-size: 11px;
+    font-style: italic;
+    height: 20px;
+	width:100%;
+}
+.iz-search .iz-search-submit {
+    background: url("images/iconsearchr.gif") no-repeat scroll 0 3px #FFFFFF;
+    border: 0 none;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    padding: 0;
+    width: 25px;
+	position: absolute;
+	right:0;
+}
+.iz-title {
+   background: url("images/catbg.jpg") repeat-x scroll center top #609CBE;
+    color: #FFFFFF;
+    height: auto;
+    min-height: 22px;
+    padding: 5px 0 0 5px;
+
+}
+.iz-title h2,.iz-title h1,.iz-title h1 a{
+	color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.iz-title h2 img,.iz-title h1 img{
+	vertical-align: text-top;
+}
+.iz-content .iz-label{
+    font-family: Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 4px 5px 2px;
+	clear:both;
+	border-bottom: 1px dashed #DDDDDD;
+}
+.iz-content .iz-label h3 {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 4px;
+}
+.iz-content .iz-label h3 {
+    font-family: Helvetica;
+    font-size: 12px;
+    line-height: 1.3;
+    margin: 0;
+}
+.iz-content .iz-label h3 a ,.iz-download .iz-download-link{
+    color: #609CBE;
+}
+.iz-download-link img{
+	vertical-align: middle;
+}
+.iz-download {
+	margin-bottom:3px;
+}
+.iz-download .iz-file{
+	 background: url("images/download.png") no-repeat scroll 0 50% #FFFFFF;
+	 padding-left:17px;
+}
+.iz-content .iz-label .iz-label-img{
+	float:left;
+	margin-right: 3px;
+}
+.iz-content .iz-label .iz-label-img img {
+    border-radius: 5px 5px 5px 5px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+.iz-content .iz-label .iz-label-title-h2{
+	float:left;
+}
+.iz-download .iz-download-spes,.iz-download-views {
+	color:#888888;
+	line-height: 1.3;
+}
+.iz-download-a{
+	padding-left: 10px;
+}
+.iz-box .iz-content-meta{
+	display:block;
+	border-bottom: 1px dashed #888888;
+	padding:5px;
+	background:#E9E9E9;
+	color:#888888;
+}
+.iz-box .iz-content-body{
+    padding: 0 5px 13px 6px;
+}
+.iz-post-title{
+	font-size:14px;
+	margin-bottom:5px;
+	font-weight:bold;
+	 border-bottom: 1px dashed #888888;
+}
+.iz-post-title a{
+	padding-left: 15px;
+	background: url("images/on.png") no-repeat scroll 0 50% transparent;
+}
+.iz-footer .google,.iz-footer .bloginfo{
+	text-align:center;
+}
+.iz-content .w-more{
+	text-align:center;
+}
+.wp-pagenavi,.page_nav {
+    margin: 5px 0;
+    text-align: center;
+}
+.wp-pagenavi a,.page_nav .page-numbers ,.page_nav .extend,.page_nav .page,.page_nav .nextpostslink,.page_nav .previouspostslink{
+    background: url("images/bg_btn.png") repeat-x scroll center bottom #FDFDFD !important;
+    border: 1px solid #CACACA !important;
+    border-radius: 3px 3px 3px 3px !important;
+    display: inline-block !important;
+    margin-bottom: 5px !important;
+    padding: 4px 8px !important;
+    text-decoration: none !important;
+}
+.wp-pagenavi .current,.page_nav .current {
+    	background: none repeat scroll 0 0 #646464 !important;
+    border: 1px solid #555555 !important;
+    border-radius: 3px 3px 3px 3px!important;
+    color: #FFFFFF !important;
+    display: inline-block !important;
+    margin-bottom: 5px !important;
+    padding: 4px 8px !important;
+}
+.iz-ads{
+	text-align:center;
+	margin:0 auto;
+}
+.adv-kichhoat{
+	background:#FFF4CC!important;
+	border:1px solid #FFDC70!important;
+	padding:5px!important;
+	display: inline-block!important;
+}
+.adv-kichhoat a{
+	float:left!important;
+	padding-right:5px!important;
+	color:#3099D4;
+	font-weight:bold;
+}
+.iz-more{
+	text-align:center;
+}
+.iz-footer{
+	text-align:center;
+	margin:auto;
+}
+.clear{
+	clear:both;
+}
