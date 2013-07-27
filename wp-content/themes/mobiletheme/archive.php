@@ -31,7 +31,7 @@
                         </div>
 					</div>
 				<?php endwhile; ?>
-				<div class="navigation">
+				<div class="navigation post">
 					<span class="goright"><?php next_posts_link('Xem thêm &raquo;') ?></span>
 					<span class="goleft"><?php previous_posts_link('&laquo; Trang trước') ?></span>
 					<div class="clear"></div>
