@@ -33,7 +33,6 @@
 								</div>							
 							</div>
 							<?php endif ?>
-							<?php the_content(); ?>
 
 						</div>
 					</div>
