@@ -5,11 +5,13 @@
 			<?php while(have_posts()) : the_post(); ?>
 				<div class="post" id="post-<?php the_ID(); ?>">
 					<div class="title">
+					<h1><?php echo get_the_title() ?></h1> 
 					<div class="date">
 						Đăng lúc <?php the_time('j M Y') ?>
 					</div>
 						<div class="content">
 							<br/>
+							<?php if(getDownloadLink()): ?>
 							<div align="center">
 								<div class="download">
 									<a href="<?php echo getDownloadLink() ?>">
@@ -18,9 +20,10 @@
 									</a>								
 								</div>							
 							</div>
-
+							<?php endif ?>
 							<?php the_content(); ?>
 							
+							<?php if(getDownloadLink()): ?>
 							<div align="center">
 								<div class="download">
 									<a href="<?php echo getDownloadLink() ?>">
@@ -29,6 +32,8 @@
 									</a>								
 								</div>							
 							</div>
+							<?php endif ?>
+							<?php the_content(); ?>
 
 						</div>
 					</div>
