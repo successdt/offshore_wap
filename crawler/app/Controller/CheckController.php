@@ -49,8 +49,9 @@ class CheckController extends AppController {
 				'link' => '.post-content-archive h3 a',
 				'title' => '.post-content h1',
 				'content' => '.entry div[itemprop="articleBody"]',
-				'category' => '3'
+				'category' => '16'
 			),
+			 
 			 
 			'http://thuvien.mobi' => array(
 				'page-link' => array(
@@ -97,6 +98,18 @@ class CheckController extends AppController {
 				'content' => '#ProductDescription',
 				'category' => '10'
 			),
+			'http://hn.eva.vn' => array(
+				'page-link' => array(
+					'http://hn.eva.vn/bi-mat-eva-c6.html',
+					'http://hn.eva.vn/bi-mat-adam-c5.html',
+					'http://hn.eva.vn/nghe-thuat-yeu-c54.html',			
+				), 
+				'link' => '.div_title_news a',
+				'title' => 'h1.title_sapo_news span',
+				'content' => '#baiviet-container',
+				'category' => '16'
+			),
+			
 		);
 		foreach($args as $key => $value){
 			foreach ($value['page-link'] as $pageLink){
@@ -120,8 +133,12 @@ class CheckController extends AppController {
 							$objHtml->load($artice);
 							$title = $objHtml->find($value['title'], 0);
 							$content = $objHtml->find($value['content'], 0);
+														
 							//remove link
 							$contentText = preg_replace("#(<a.*?>)(.*?)(<\/a>)#", "$2", $content->innertext);
+							//remove scrip
+							$contentText = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $contentText);
+							
 							$metaTitle = $objHtml->find('meta[name="title"]', 0);
 							$metaDesc = $objHtml->find('meta[name="description"]', 0);
 							$metaKeywords = $objHtml->find('meta[name="keywords"]', 0);
@@ -139,7 +156,10 @@ class CheckController extends AppController {
 						}
 
 					}					
+				} else {
+					CakeLog::write('debug', ' failed request to ' . $pageLink);
 				}
+				
 
 			}
  
@@ -161,16 +181,16 @@ class CheckController extends AppController {
 		
 		$postData[0] = array(
 			'post_author' => 1,
-			'post_date' => date('Y-m-d h:i:s', time()),
-			'post_date_gmt' => date('Y-m-d h:i:s', time()),
+			'post_date' => date('Y-m-d H:i:s', time()),
+			'post_date_gmt' => date('Y-m-d H:i:s', time()),
 			'post_content' => $data['content'],
 			'post_title' => $data['title'],
 			'post_status' => 'publish',
 			'comment_status' => 'close',
 			'ping_status' => 'open',
 			'post_name' => $this->convertText($data['title']),
-			'post_modified' => date('Y-m-d h:i:s', time()),
-			'post_modified_gmt' => date('Y-m-d h:i:s', time()),
+			'post_modified' => date('Y-m-d H:i:s', time()),
+			'post_modified_gmt' => date('Y-m-d H:i:s', time()),
 			'post_parent' => 0,
 			'menu_order' => 0,
 			'post_type' => 'post',
@@ -259,6 +279,7 @@ class CheckController extends AppController {
 		}
 		catch( Exception $e){}
 	}
+	
 	
 	public function convertText($str){
 		$str = html_entity_decode($str);
