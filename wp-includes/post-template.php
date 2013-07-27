@@ -1465,8 +1465,10 @@ function wp_list_post_revisions( $post_id = 0, $args = null ) {
  * get the desc with limit characters
  * @author duythanhdao@live.com
  */
-function getTheDescription(){
-	$desc = strip_tags(get_the_content());
+function getTheDescription($desc = null){
+	$desc = strip_tags($desc);
+	if(!$desc)
+		$desc = strip_tags(get_the_content());
 	$desc = preg_replace('/\[(http:\/\/[^\s]+)\]/', '', $desc);
 	if(mb_strlen($desc) > 150) {
 		$desc = mb_strcut($desc, 0, 150);
@@ -1481,8 +1483,9 @@ function getTheDescription(){
  * get download link from content()
  * @author duythanhdao@live.com
  */
-function getDownloadLink(){
-	$content = get_the_content();
+function getDownloadLink($content = null){
+	if(!$content)
+		$content = get_the_content();
 	preg_match('/\[(http:\/\/[^\s]+)\]/', $content, $link);
 	$link = str_replace(array('[', ']'), '', $link);
 	return $link[0];
