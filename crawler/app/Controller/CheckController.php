@@ -121,6 +121,7 @@ class CheckController extends AppController {
 					$links = $objHtml->find($value['link']);
 					$links = array_reverse($links);
 					CakeLog::write('debug', count($links) . ' links were found of ' . $pageLink);
+					echo count($links) . ' links were found of ' . $pageLink;
 					foreach($links as $link){
 						
 						if((strpos($link->href, $key) === 0)){
@@ -164,6 +165,7 @@ class CheckController extends AppController {
 			}
  
 		}
+		die;
 	}
 	
 	/**
