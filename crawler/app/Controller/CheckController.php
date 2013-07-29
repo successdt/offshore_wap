@@ -11,7 +11,6 @@ class CheckController extends AppController {
 		$result = array();
 		
 		$args = array(
-			/*
 			'http://ngoisao.vn' => array(
 				'page-link' => array(
 					'http://ngoisao.vn/gioi-tre/hotgirl-hotboy/',
@@ -110,14 +109,8 @@ class CheckController extends AppController {
 				'content' => '#baiviet-container',
 				'category' => '16'
 			),
-			*/
 			'http://www.doctruyen360.com' => array(
 				'page-link' => array(
-					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/15/',
-					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/14/',
-					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/13/',
-					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/12/',
-					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/11/',
 					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/10/',
 					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/9/',
 					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/8/',
@@ -134,7 +127,6 @@ class CheckController extends AppController {
 				'content' => 'div.27976',
 				'category' => '17'
 			),
-			/*
 			
 			'http://www.doctruyen360.com' => array(
 				'page-link' => array(
@@ -164,7 +156,7 @@ class CheckController extends AppController {
 				'title' => '.hentry  h2',
 				'content' => '.entrypost',
 				'category' => '19'
-			), */
+			),
 		);
 		
 		$stringReplace = array(
