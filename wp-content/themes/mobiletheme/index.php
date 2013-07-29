@@ -6,7 +6,10 @@
 					<div class="post post-title">
 						Mới nhất
 					</div>
-					<?php query_posts('posts_per_page=5');?>
+					<?php
+						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+				 		query_posts('posts_per_page=5&paged=' . $paged);
+				 	?>
 					<?php while(have_posts()) : the_post(); ?>
 						
 						<div class="post" id="post-<?php the_ID(); ?>">
@@ -76,7 +79,7 @@
 		 	<?php if(count($posts)) :?>
 			 	<div class="post-wrapper" style="margin-top: 10px;">
 					<div class="post post-title">
-						<?php echo get_category($catId)->name ?>
+						<a href="<?php echo get_category_link($catId); ?>" title="<?php echo get_category($catId)->name ?>"><?php echo get_category($catId)->name ?></a>
 					</div>		 	
 			 		<?php foreach($posts as $post): ?>
 					<div class="post" id="post-<?php echo $post->ID; ?>">
@@ -104,6 +107,9 @@
 	                    </div>        	
 	                </div>
 			 		<?php endforeach ?>
+			 		<div class="post" style="text-align: right;">
+						<a href="<?php echo get_category_link($catId); ?>" title="Xem thêm">Xem thêm...</a> 
+				 	</div>
 			 	</div>
 		 	<?php endif; ?>	 	
 	 	
