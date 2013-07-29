@@ -110,7 +110,70 @@ class CheckController extends AppController {
 				'category' => '16'
 			),
 			
+			'http://www.doctruyen360.com' => array(
+				'page-link' => array(
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/15/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/14/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/13/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/12/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/11/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/10/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/9/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/8/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/7/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/6/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/5/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/4/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/3/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/2/',
+					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen',			
+				), 
+				'link' => 'h2.title a',
+				'title' => '.metainfo h1 a',
+				'content' => 'div.27976',
+				'category' => '17'
+			),
+			
+			
+			'http://www.doctruyen360.com' => array(
+				'page-link' => array(
+					'http://www.doctruyen360.com/truyen-cuoi-cuc-hay/page/3/',
+					'http://www.doctruyen360.com/truyen-cuoi-cuc-hay/page/2/',
+					'http://www.doctruyen360.com/truyen-cuoi-cuc-hay/',			
+				), 
+				'link' => 'h2.title a',
+				'title' => '.metainfo h1 a',
+				'content' => 'div.27976',
+				'category' => '17'
+			),
+			'http://truyenhay.vn' => array(
+				'page-link' => array(
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/10',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/9',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/8',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/7',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/6',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/5',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/4',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/3',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/2',
+					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song',		
+				), 
+				'link' => '.hentry h2 a',
+				'title' => '.hentry  h2',
+				'content' => '.entrypost',
+				'category' => '19'
+			), 
 		);
+		
+		$stringReplace = array(
+			'doctruyen360.com' => 'gamechonloc.mobi',
+			'doctruyen360@gmail.com' => 'gamechonloc.mobi@gmail.com'
+		);
+		$removeImages = array(
+			'http://www.doctruyen360.com'
+		);
+		
 		foreach($args as $key => $value){
 			foreach ($value['page-link'] as $pageLink){
 				$header = $this->parse($pageLink);
@@ -129,6 +192,7 @@ class CheckController extends AppController {
 						} else {
 							$artice = $this->parse($key . $link->href);
 						}
+
 						if($artice){
 							$objHtml->clear();
 							$objHtml->load($artice);
@@ -139,6 +203,14 @@ class CheckController extends AppController {
 							$contentText = preg_replace("#(<a.*?>)(.*?)(<\/a>)#", "$2", $content->innertext);
 							//remove scrip
 							$contentText = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $contentText);
+							//remove unwanted words
+							foreach($stringReplace as $strSearch => $strReplace){
+								$contentText =  str_replace($strSearch, $strReplace, $contentText);
+							}
+							//remove photos
+							if(in_array($key, $removeImages)){
+								$contentText = preg_replace('/<img[^>]+\>/', '', $contentText);
+							}
 							
 							$metaTitle = $objHtml->find('meta[name="title"]', 0);
 							$metaDesc = $objHtml->find('meta[name="description"]', 0);
