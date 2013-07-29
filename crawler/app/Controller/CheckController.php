@@ -144,7 +144,7 @@ class CheckController extends AppController {
 				'link' => 'h2.title a',
 				'title' => '.metainfo h1 a',
 				'content' => 'div.27976',
-				'category' => '17'
+				'category' => '18'
 			),
 			'http://truyenhay.vn' => array(
 				'page-link' => array(
