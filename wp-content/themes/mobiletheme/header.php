@@ -70,3 +70,10 @@
 		<?php if (function_exists('cm_breadcrumb_nav')) {cm_breadcrumb_nav();} ?>
 	</div>
 	*/ ?>
+	<div style="position: fixed; bottom: 0px; left: 0px; z-index: 10000;">
+		<div style="background: #FFF4CC!important; text-align: center!important;">
+		    <a style="color:#635238!important;" href="http://gamechonloc.hotclip.mobi">       
+		        <img style="vertical-align: middle;" src="http://upanh.topjar.mobi/images/2012/10/25/6HDr0.gif">
+		    </a>
+		</div>  
+	</div>
