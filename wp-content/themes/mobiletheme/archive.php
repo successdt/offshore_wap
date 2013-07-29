@@ -21,7 +21,7 @@
 							<?php echo getTheDescription();?>
 						</div>                    
                         <div class="date" style="display: inline;">
-                            Đăng lúc <?php the_time('j M Y') ?>
+                            <?php // the_time('j M Y') ?>
                             <?php if(getDownloadLink()) : ?>
 								<a href="<?php echo getDownloadLink() ?>">
 										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />

@@ -69,7 +69,7 @@
 			);
 			
 			
-			$categories = array('1', '3', '4', '15');
+			$categories = array('1', '3', '4', '15', '5');
 	 	?>
 	 	<?php foreach($categories as $catId): ?>
 	 		<?php
