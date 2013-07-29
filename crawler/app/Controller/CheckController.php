@@ -283,17 +283,17 @@ class CheckController extends AppController {
 			array(
 				'post_id' => $postId,
 				'meta_key' => '_su_title',
-				'meta_value' => $data['meta_title'] . ', ecomwebpro'
+				'meta_value' => $data['meta_title'] . '| gamechonloc.mobi'
 			),
 			array(
 				'post_id' => $postId,
 				'meta_key' => '_su_description',
-				'meta_value' => $data['meta_description'] . ', ecomwebpro'
+				'meta_value' => $data['meta_description'] . ', gamechonloc.mobi'
 			),
 			array(
 				'post_id' => $postId,
 				'meta_key' => '_su_keywords',
-				'meta_value' => $data['meta_keywords'] . ', ecomwebpro'
+				'meta_value' => $data['meta_keywords'] . ', gamechonloc'
 			)
 		));
 	}
