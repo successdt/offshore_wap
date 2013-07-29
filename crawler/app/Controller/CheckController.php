@@ -169,6 +169,7 @@ class CheckController extends AppController {
 		
 		foreach($args as $key => $value){
 			foreach ($value['page-link'] as $pageLink){
+				CakeLog::write('debug', 'Begin request to ' . $pageLink);
 				$header = $this->parse($pageLink);
 				if($header){
 					$objHtml = new simple_html_dom();
