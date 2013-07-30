@@ -169,6 +169,18 @@ class CheckController extends AppController {
 				'content' => '.entrypost',
 				'category' => '19'
 			),
+			array(
+				'name' => 'http://vnexpress.net',
+				'page-link' => array(
+					'http://vnexpress.net/tin-tuc/tam-su/page/3.html',
+					'http://vnexpress.net/tin-tuc/tam-su/page/2.html',
+					'http://vnexpress.net/tin-tuc/tam-su',			
+				), 
+				'link' => 'h2 a.link-title14',
+				'title' => 'h1.Title',
+				'content' => '.fck_detail',
+				'category' => '19'
+			),
 		);
 		
 		$stringReplace = array(
