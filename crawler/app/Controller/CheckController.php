@@ -11,7 +11,8 @@ class CheckController extends AppController {
 		$result = array();
 		
 		$args = array(
-			'http://ngoisao.vn' => array(
+	 		array(
+				'name' => 'http://ngoisao.vn',
 				'page-link' => array(
 					'http://ngoisao.vn/gioi-tre/hotgirl-hotboy/',
 				),
@@ -21,7 +22,8 @@ class CheckController extends AppController {
 				'category' => '4'
 			),
 			
-			'http://saoonline.vn' => array(
+	  		array(
+				'name' => 'http://saoonline.vn',
 				'page-link' => array(
 					'http://saoonline.vn/su-kien/hot-girl/'
 				),
@@ -30,7 +32,8 @@ class CheckController extends AppController {
 				'content' => '#entry-detail .content-c',
 				'category' => '4'
 			),
-			'http://www.vietgiaitri.com/' => array(
+			array(
+				'name' => 'http://www.vietgiaitri.com/',
 				'page-link' => array(
 					'http://www.vietgiaitri.com/tag/bo-anh-nong-bong/',
 					'http://www.vietgiaitri.com/tag/anh-nong-bong/',
@@ -40,7 +43,8 @@ class CheckController extends AppController {
 				'content' => '.entry div[itemprop="articleBody"]',
 				'category' => '10'
 			),
-			'http://www.vietgiaitri.com' => array(
+			array(
+				'name' => 'http://www.vietgiaitri.com/',
 				'page-link' => array(
 					'http://www.vietgiaitri.com/category/chuyen-yeu/gioi-tinh/',
 					'http://www.vietgiaitri.com/category/chuyen-yeu/tam-su/',
@@ -53,7 +57,8 @@ class CheckController extends AppController {
 			),
 			 
 			 
-			'http://thuvien.mobi' => array(
+			array(
+				'name' => 'http://thuvien.mobi',
 				'page-link' => array(
 					'http://thuvien.mobi/category/anh-nong/page/3',
 					'http://thuvien.mobi/category/anh-nong/page/2',
@@ -64,7 +69,8 @@ class CheckController extends AppController {
 				'content' => '.entry .entry-content',
 				'category' => '10'
 			),
-			'http://www.vietgiaitri.com' => array(
+			array(
+				'name' => 'http://www.vietgiaitri.com/',
 				'page-link' => array(
 					'http://www.vietgiaitri.com/category/super-star/sao-viet/',
 					'http://www.vietgiaitri.com/category/super-star/sao-chau-a/',
@@ -74,7 +80,8 @@ class CheckController extends AppController {
 				'content' => '.entry div[itemprop="articleBody"]',
 				'category' => '4'
 			),
-			'http://www.vietgiaitri.com' => array(
+			array(
+				'name' => 'http://www.vietgiaitri.com/',
 				'page-link' => array(
 					'http://www.vietgiaitri.com/category/dep-xinh/nguoi-dep/page/5/',
 					'http://www.vietgiaitri.com/category/dep-xinh/nguoi-dep/page/4/',
@@ -87,7 +94,8 @@ class CheckController extends AppController {
 				'content' => '.entry div[itemprop="articleBody"]',
 				'category' => '9'
 			),
-			'http://www.tapchidanong.org' => array(
+			array(
+				'name' => 'http://www.tapchidanong.org',
 				'page-link' => array(
 					'http://www.tapchidanong.org/brands/Anh-girl-xinh.html?page=3&sort=newest',
 					'http://www.tapchidanong.org/brands/Anh-girl-xinh.html?page=2&sort=newest',
@@ -98,7 +106,8 @@ class CheckController extends AppController {
 				'content' => '#ProductDescription',
 				'category' => '10'
 			),
-			'http://hn.eva.vn' => array(
+			array(
+				'name' => 'http://hn.eva.vn',
 				'page-link' => array(
 					'http://hn.eva.vn/bi-mat-eva-c6.html',
 					'http://hn.eva.vn/bi-mat-adam-c5.html',
@@ -109,7 +118,8 @@ class CheckController extends AppController {
 				'content' => '#baiviet-container',
 				'category' => '16'
 			),
-			'http://www.doctruyen360.com' => array(
+			array(
+				'name' => 'http://www.doctruyen360.com',
 				'page-link' => array(
 					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/10/',
 					'http://www.doctruyen360.com/tag/truyen-tinh-tuoi-teen/page/9/',
@@ -128,7 +138,8 @@ class CheckController extends AppController {
 				'category' => '17'
 			),
 			
-			'http://www.doctruyen360.com' => array(
+			array(
+				'name' => 'http://www.doctruyen360.com',
 				'page-link' => array(
 					'http://www.doctruyen360.com/truyen-cuoi-cuc-hay/page/3/',
 					'http://www.doctruyen360.com/truyen-cuoi-cuc-hay/page/2/',
@@ -139,7 +150,8 @@ class CheckController extends AppController {
 				'content' => 'div.27976',
 				'category' => '18'
 			),
-			'http://truyenhay.vn' => array(
+			array(
+				'name' => 'http://truyenhay.vn',
 				'page-link' => array(
 					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/10',
 					'http://truyenhay.vn/category/truyen-ngan/cau-chuyen-cuoc-song/page/9',
@@ -167,9 +179,9 @@ class CheckController extends AppController {
 			'http://www.doctruyen360.com'
 		);
 		
-		foreach($args as $key => $value){
+		foreach($args as $value){
 			foreach ($value['page-link'] as $pageLink){
-				CakeLog::write('debug', 'Begin request to ' . $pageLink);
+				
 				$header = $this->parse($pageLink);
 				if($header){
 					$objHtml = new simple_html_dom();
@@ -181,10 +193,10 @@ class CheckController extends AppController {
 					echo count($links) . ' links were found of ' . $pageLink;
 					foreach($links as $link){
 						
-						if((strpos($link->href, $key) === 0)){
+						if((strpos($link->href, $value['name']) === 0)){
 							$artice = $this->parse($link->href);	
 						} else {
-							$artice = $this->parse($key . $link->href);
+							$artice = $this->parse($value['name'] . $link->href);
 						}
 
 						if($artice){
@@ -202,7 +214,7 @@ class CheckController extends AppController {
 								$contentText =  str_replace($strSearch, $strReplace, $contentText);
 							}
 							//remove photos
-							if(in_array($key, $removeImages)){
+							if(in_array($value['name'], $removeImages)){
 								$contentText = preg_replace('/<img[^>]+\>/', '', $contentText);
 							}
 							
@@ -212,7 +224,7 @@ class CheckController extends AppController {
 							
 							$data = array(
 								'title' => $title->innertext,
-								'content' => $contentText . '<br/> Nguồn ' . $key . '',
+								'content' => $contentText . '<br/> Nguồn ' . $value['name'] . '',
 								'category' => $value['category'],
 								'meta_title' => is_object($metaTitle) ? $metaTitle->innertext : $title->innertext,
 								'meta_description' => is_object($metaDesc) ? $metaDesc->content : '',
