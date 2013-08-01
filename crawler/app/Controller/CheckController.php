@@ -134,7 +134,7 @@ class CheckController extends AppController {
 				), 
 				'link' => 'h2.title a',
 				'title' => '.metainfo h1 a',
-				'content' => 'div.27976',
+				'content' => 'div.dtct1072',
 				'category' => '17'
 			),
 			
