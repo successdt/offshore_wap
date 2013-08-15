@@ -1,3 +1,8 @@
+		<div style="margin-top: 10px;">
+			<a href="http://cameraquansat.gobin.vn/">
+				<img src="/wp-content/uploads/2013/08/2-300x25.jpg" alt="camera quan sát">
+			</a>
+		</div>
 		<div class="gototop base-div">
 			<a href="#">Lên đầu trang</a>
 		</div>
