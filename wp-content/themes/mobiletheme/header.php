@@ -6,6 +6,7 @@
 
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />	
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="google-site-verification" content="VzguWk-ilpPa1iSGjdHH1fIGG5rYp87ZLsW2nmcrjvQ" />
 <?php /*
 <script type="text/javascript">
 	  var _gaq = _gaq || [];
