@@ -1,6 +1,6 @@
 		<div style="margin-top: 10px;">
 			<a href="http://cameraquansat.gobin.vn/">
-				<img style="max-width: 100%;" src="/wp-content/uploads/2013/08/2.jpg" alt="camera quan sát">
+				<img style="max-width: 100%;" src="/wp-content/uploads/2013/08/dd.jpg" alt="camera quan sát">
 			</a>
 			
 			<div class="g-plusone" data-annotation="inline" data-width="100"></div>
