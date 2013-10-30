@@ -1,8 +1,51 @@
 <?php get_header(); ?> 
 	<div class="entry"> 
 		<div id="container">
+
+	 		<?php
+	 			$catId = 1;
+	 			$args['category'] = $catId;
+			 	$posts = get_posts( $args );
+			 ?>
+		 	<?php if(count($posts)) :?>
+			 	<div class="post-wrapper" style="margin-top: 10px;">
+					<div class="post post-title">
+						<a href="<?php echo get_category_link($catId); ?>" title="<?php echo get_category($catId)->name ?>"><?php echo get_category($catId)->name ?></a>
+					</div>		 	
+			 		<?php foreach($posts as $post): ?>
+					<div class="post" id="post-<?php echo $post->ID; ?>">
+						<div class="imgpost">
+							<a href="<?php the_permalink(); ?>" title="<?php echo $post->post_title; ?>">
+								<img src="<?php echo get_first_image(); ?>" alt="<?php echo $post->post_title; ?>" width="56" height="56"/>
+							</a>
+						</div>
+						 <div class="title">
+						 	<a href="<?php the_permalink(); ?>" title="<?php echo $post->post_title; ?>">
+	                           <h2><?php echo $post->post_title; ?></h2>
+	    					</a>
+						</div>
+						<div class="description">
+							<?php echo getTheDescription($post->post_content);?>
+						</div>                    
+	                    <div class="date" style="display: inline;">
+	                        <?php if(getDownloadLink($post->post_content)) : ?>
+								
+								<a href="<?php echo getDownloadLink($post->post_content) ?>">
+									<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
+									Download miễn phí
+								</a>	                            	
+	                        <?php endif ?>
+	                    </div>        	
+	                </div>
+			 		<?php endforeach ?>
+			 		<div class="post" style="text-align: right;">
+						<a href="<?php echo get_category_link($catId); ?>" title="Xem thêm">Xem thêm...</a> 
+				 	</div>
+			 	</div>
+		 	<?php endif; ?>
+
 			<?php if(have_posts()) : ?>
-				<div class="post-wrapper">
+				<div class="post-wrapper" style="margin-top: 10px;">
 					<div class="post post-title">
 						Mới nhất
 					</div>
@@ -31,7 +74,7 @@
 									
 									<a href="<?php echo getDownloadLink() ?>">
 										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
-										Tải miễn phí
+										Download miễn phí
 									</a>	                            	
 	                            <?php endif ?>
 	                        </div>        	
@@ -69,7 +112,7 @@
 			);
 			
 			
-			$categories = array('1', '3', '4', '15', '5');
+			$categories = array('3', '4', '15', '5');
 	 	?>
 	 	<?php foreach($categories as $catId): ?>
 	 		<?php
@@ -101,7 +144,7 @@
 								
 								<a href="<?php echo getDownloadLink($post->post_content) ?>">
 									<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
-									Tải miễn phí
+									Download miễn phí
 								</a>	                            	
 	                        <?php endif ?>
 	                    </div>        	

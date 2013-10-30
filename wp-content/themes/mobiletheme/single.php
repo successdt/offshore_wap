@@ -16,7 +16,7 @@
 								<div class="download">
 									<a href="<?php echo getDownloadLink() ?>">
 										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
-										Tải miễn phí
+										Download miễn phí
 									</a>								
 								</div>							
 							</div>
@@ -28,7 +28,7 @@
 								<div class="download">
 									<a href="<?php echo getDownloadLink() ?>">
 										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
-										Tải miễn phí
+										Download miễn phí
 									</a>								
 								</div>							
 							</div>
