@@ -1,8 +1,9 @@
 		<div style="margin-top: 10px;">
+			<?php /*
 			<a href="http://cameraquansat.gobin.vn/">
 				<img style="max-width: 100%;" src="/wp-content/uploads/2013/08/dd.jpg" alt="camera quan sát">
 			</a>
-			
+			*/ ?>
 			<div class="g-plusone" data-annotation="inline" data-width="100"></div>
 			<!-- Place this tag after the last +1 button tag. -->
 			<script type="text/javascript">
