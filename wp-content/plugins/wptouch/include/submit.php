@@ -216,6 +216,10 @@ if ( isset( $_POST['submit'] ) ) {
 		$a['adsense-id'] = trim( $_POST['adsense-id'] );
 	}
 
+	if ( isset($_POST['adsense-slot-id']) ) {
+		$a['adsense-slot-id'] = trim( $_POST['adsense-slot-id'] );
+	}	
+
 	if ( isset($_POST['adsense-channel']) ) {
 		$a['adsense-channel'] = $_POST['adsense-channel'];
 	}		
@@ -263,6 +267,12 @@ if ( isset( $_POST['submit'] ) ) {
 	} else {
 		$a['show_powered_by'] = 0;
 	}
+
+	if ( isset( $_POST['enable-data-sharing'] ) ) {
+		$a['share_data'] = 1;
+	} else {
+		$a['share_data'] = 0;
+	}	
 
 	foreach ($_POST as $k => $v) {
 		if ($k == 'enable_main_title') {

@@ -20,36 +20,31 @@
 						<?php _e( "Advertising Service", "wptouch" ); ?>
 					</li>
 				</ul>	
+				<div class="bnc-clearer"></div>
 			</div>			
-			<div class="bnc-clearer"></div>
-		</div>		
 		
-		<div id="google-adsense">
-			<div class="left-content">
-				<h4><?php _e( "Google Adsense", "wptouch" ); ?></h4>
-				<p><?php _e( "Enter your Google AdSense ID if you'd like use it to add support for mobile advertising in WPtouch posts.", "wptouch" ); ?></p>
-				<p><?php _e( "Make sure to include the 'pub-' part of your ID string.", "wptouch" ); ?></p>
-			</div>
-			
-			<div class="right-content">
-				<ul class="wptouch-make-li-italic">
-					<li><input name="adsense-id" type="text" value="<?php echo $wptouch_settings['adsense-id']; ?>" /><?php _e( "Google AdSense ID", "wptouch" ); ?></li>
-					<li><input name="adsense-channel" type="text" value="<?php echo $wptouch_settings['adsense-channel']; ?>" /><?php _e( "Google AdSense Channel", "wptouch" ); ?></li>
-				</ul>
-			</div>			
-			<div class="bnc-clearer"></div>
-		</div>	
+			<div id="google-adsense">
+				<div class="left-content">
+					<h4><?php _e( "Google Adsense", "wptouch" ); ?></h4>
+					<p><?php _e( "Enter your Google Adsense ID if you'd like use it to add support for mobile advertising in WPtouch posts.", "wptouch" ); ?></p>
+					<p><?php _e( "Make sure to include the 'pub-' part of your ID string.", "wptouch" ); ?></p>
+				</div>
+				
+				<div class="right-content">
+					<ul class="wptouch-make-li-italic">
+						<li><input name="adsense-id" type="text" value="<?php echo $wptouch_settings['adsense-id']; ?>" /><?php _e( "Google Adsense Publisher ID", "wptouch" ); ?></li>
+						<li><input name="adsense-slot-id" type="text" value="<?php echo $wptouch_settings['adsense-slot-id']; ?>" /><?php _e( "Google Adsense Slot ID", "wptouch" ); ?></li>
+					</ul>
+				</div>			
+				<div class="bnc-clearer"></div>
+			</div>	
+		</div>		
 		
 		<div id="main-stats-area">
 			<div class="left-content">
 		    	<h4><?php _e( "Stats &amp; Custom Code", "wptouch" ); ?></h4>
-		 		<p><?php _e( "If you'd like to capture traffic statistics ", "wptouch" ); ?><br /><?php _e( "(Google Analytics, MINT, etc.)", "wptouch" ); ?></p>
-		 		<p><?php _e( "Enter the code snippet(s) for your statistics tracking.", "wptouch" ); ?> <?php _e( "You can also enter custom CSS &amp; other HTML code.", "wptouch" ); ?> <a href="#css-info" class="fancylink">?</a></p>
-		 		<div id="css-info" style="display:none">
-					<h2><?php _e( "More Info", "wptouch" ); ?></h2>
-					<p><?php _e( "You may enter a custom css file link easily. Simply add the full link to the css file like this:", "wptouch" ); ?></p>
-					<p><?php _e( "<code>&lt;style type=&quot;text/css&quot;&gt;#mydiv { color: red; }&lt;/style&gt;</code>", "wptouch" ); ?></p>			
-				</div>	
+		 		<p><?php _e( "If you'd like to capture traffic statistics ", "wptouch" ); ?><br /><?php _e( "(Google Analytics, MINT, etc.)", "wptouch" ); ?> <a href="#css-info" class="fancylink" rel="tooltip" title="<?php _e( "You may enter a custom css file link easily. Simply add the full link to the css file like this:", "wptouch" ); ?>">?</a></p>
+		 		<p><?php _e( "Enter the code snippet(s) for your statistics tracking.", "wptouch" ); ?> <?php _e( "You can also enter custom CSS &amp; other HTML code.", "wptouch" ); ?></p>
 			</div>
 			
 			<div class="right-content">

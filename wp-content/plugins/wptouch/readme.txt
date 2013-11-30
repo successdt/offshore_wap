@@ -1,35 +1,74 @@
 === Plugin Name ===
 Contributors: bravenewcode, duanestorey, dalemugford
-Tags: wptouch, iphone, ipod, theme, apple, mac, bravenewcode, ajax, mobile, android, blackberry, smartphone, responsive, design 
-Requires at least: 3.1
-Tested up to: 3.5.2
-Stable tag: 1.9.7.1
+Tags: wptouch, iphone, ipod, bravenewcode, mobile, android, blackberry, smartphone, responsive, design, mobile plugin, ios, mobile theme
+Requires at least: 3.3
+Tested up to: 3.7.1
+Stable tag: 1.9.8.9
+License: GPLv2
 
-WPtouch: A simple, powerful & elegant mobile solution for your website.
+Create a slick mobile WordPress website with just a few clicks.
 
 == Description ==
 
-WPtouch automatically transforms your WordPress website for mobile devices, complete with ajax loading articles and smooth effects when viewed from popular touch mobile devices like the iPhone, iPod touch, Android mobile phones, BlackBerry OS6+ mobile devices, and more!
+WPtouch is a mobile plugin for WordPress that automatically enables a simple and elegant mobile theme for mobile visitors of your WordPress website. The mobile WordPress theme is complete with AJAX loading articles and smooth effects when viewed from popular touch mobile devices like the iPhone, iPod touch, Android mobile phones, BlackBerry OS6+ mobile devices, and more.
 
-The admin panel allows you to customize many aspects of its appearance, and deliver a *fast*, user-friendly and stylish version of your site to touch mobile visitors, without modifying *a single bit of code* (or affecting) your regular desktop theme.
+The administration panel allows you to customize many aspects of its appearance, and deliver a *fast*, user-friendly and stylish version of your site to your mobile visitors, without modifying *a single bit of code* (or affecting) your regular desktop theme.
 
-The theme also includes the ability for visitors to switch between *WPtouch* view and your site's regular theme.
+The theme also includes the ability for visitors to switch between the theme on your mobile WordPress website and your website's regular theme.
 
-Now includes .pot file for translations (submit yours @ http://www.bravenewcode.com/contact)
+**Now Available: WPtouch Pro 3**
 
-Like WPtouch but want more out of the product?
+With 3 all-new themes, an intuitive admin panel and great one-to-one ticketing support, it's the best WPtouch yet!
 
-*WPtouch Pro 3 is now available!!!*
-With all-new themes, an intuitive admin panel and great one-to-one ticketing support, it's the best WPtouch yet!
+For more information visit the [WPtouch Pro 3 Product Page](http://www.bravenewcode.com/wptouch/?utm_campaign=wptouch-front-readme&utm_medium=web&utm_source=wordpressdotorg "WPtouch Pro 3 Product Page").
 
-For more information visit http://www.bravenewcode.com/wptouch/
-
-'WPtouch' is a trademark of BraveNewCode Inc.
-'WPtouch Pro' is a registered trademark of BraveNewCode Inc.
+'WPtouch' & ’WPtouch Pro' are trademarks of BraveNewCode Inc.
 
 == Changelog ==
 
-= Version 1.9.7.1 (Jul 18, 2013) =
+= Version 1.9.8.9 =
+
+* Fix for Adsense settings issue
+
+= Version 1.9.8.8 =
+
+* Verified WordPress 3.7 compatibility
+
+= Version 1.9.8.7 =
+
+* Fixed: Issues with logging in / out on sites not in root
+* Updated: Information in read me about the new user manual
+* Updated: Links to user manual
+
+= Version 1.9.8.6 =
+
+* Added: The ability to share usage statistics to help improve the product
+
+= Version 1.9.8.5 =
+
+* Updated: Footer text
+
+= Version 1.9.8.4 = 
+
+* Fixed: Issue with the settings page in the admin panel
+
+= Version 1.9.8.2 =
+
+* Fixed: Issue with WordPress multisite
+
+= Version 1.9.8.1 =
+
+* Fixed: Potential security issues
+* Added: Downloadable User's Guide in admin panel
+
+= Version 1.9.8 =
+
+* Updated: Modified Adsense code to use asynchronous version as well as slot ID - you must create a new 320x50px ad via your adsense account
+* Updated: Updated product tooltips codde
+* Updated: Administration text and README descriptions
+* Fixed: Admin bugs
+
+= Version 1.9.7.1 =
 
 * Added: Brazilian Português translation (thanks!)
 
@@ -820,6 +859,10 @@ Once installed and activated visit the WPtouch admin page (*Settings/WPtouch*) t
 
 The best way to use WPtouch on WordPress Multisite Installations is to do so via the *Activate WPtouch Site Wide* (2.9) or *Network Activate* link in the plugins area.
 
+= User Manual =
+
+You can download the user manual from within the WPtouch administration panel.  It contains information on how to configure WPtouch.
+
 == Frequently Asked Questions ==
 
 = I thought most touch smartphones show my website fine the way it is now? =
@@ -839,6 +882,24 @@ We even automatically put a little snippet of code into your current desktop the
 = Will it slow down my blog, or increase my server load? =
 
 No. The entire *WPtouch* footprint is small. In fact, it should reduce load, because of its streamlined approach to serving optimized content to mobile visitors. It was designed to be as lightweight and speedy as possible, while still serving your site's content in a richly presented way, sparing no essential features like search, login, categories, tags, comments etc.
+
+== Upgrade Notice ==
+
+= 1.9.8.2 =
+
+An issue with WordPress multsite was addressed
+
+= 1.9.8.1 =
+
+Potential security issues were fixed
+
+= 1.9.8 =
+
+Includes important administration panel updates
+
+= 1.9.7.1 =
+
+Includes a new POT file for Brazilian Portuguese
 
 == Screenshots ==
 
