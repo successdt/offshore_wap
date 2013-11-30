@@ -1,2 +1,2 @@
 #!/bin/bash
-curl http://ecomwap.tk/check
+curl http://ecomwapgame.tk/check
