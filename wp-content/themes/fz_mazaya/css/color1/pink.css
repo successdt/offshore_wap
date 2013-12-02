@@ -1,0 +1,55 @@
+.toolbar-bgcolor {border-bottom: 3px solid #e72080;}
+a,
+.menu-dropdown li.active .level1 { color: #e49; }
+
+.button-primary { background: #e49; }
+
+
+
+/* Menus Hover----------------------------------------------------------------------------------------------------*/
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-top: 1px solid #ee65a7; }
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1,
+.sprocket-lists li.active .sprocket-lists-title .indicator,
+.sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active, .sprocket-mosaic-loadmore
+ { background-color: #e72080;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(rgb(236, 72, 153)), to(rgb(231, 32, 128)));
+background-image: -webkit-radial-gradient(50% 50%, rgb(231, 32, 128), rgb(236, 72, 153));
+background-image: -moz-radial-gradient(50% 50%, rgb(231, 32, 128), rgb(236, 72, 153));
+background-image: -o-radial-gradient(50% 50%, rgb(231, 32, 128), rgb(236, 72, 153));
+background-image: -ms-radial-gradient(50% 50%, rgb(231, 32, 128), rgb(236, 72, 153));
+background-image: radial-gradient(50% 50%, rgb(231, 32, 128), rgb(236, 72, 153));
+	
+	
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.1),inset 0 1px 1px rgba(225,225,225,0.4),inset 0 -1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow:0 1px 1px rgba(0,0,0,0.1),inset 0 1px 1px rgba(225,225,225,0.4),inset 0 -1px 1px rgba(0,0,0,0.1);
+box-shadow:0 1px 1px rgba(0,0,0,0.1),inset 0 1px 1px rgba(225,225,225,0.4),inset 0 -1px 1px rgba(0,0,0,0.1); 
+ }
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { background-image: url(../../images/style/menuhover/menu_dropdown_arrow_pink.png); }
+
+
+#menu-block .menu-dropdown a.level2:hover,
+#menu-block .menu-dropdown a.current.level2, 
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.current.level3 { color:#e49; }
+
+
+
+/* Features - Layout Slideshow - Colors */
+.layout-slideshow .sprocket-features-title {background: rgba(238, 68, 153, 0.9);color: #fff;}
+
+
+/* k2 ----------------------------------------------------------------------------------------------------*/
+.latestView div.latestItemCategory, div.catItemCategory, div.tagItemCategory {background: rgba(238, 68, 153, 0.6);}
+
+
+

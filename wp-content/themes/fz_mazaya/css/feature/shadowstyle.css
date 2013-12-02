@@ -1,0 +1,53 @@
+
+#toolbar-block .toolbar-pattern {
+   background-image: url(../../images/style/shadow.png);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+        }
+
+
+
+
+.main-block-shadow {
+   background-image: url(../../images/style/shadow.png);
+  background-position: 50% 100%;
+    background-repeat: no-repeat;
+    bottom: auto;
+    height: 34px;
+    position: absolute;
+    top: -18px;
+    width: 100%;
+    z-index: -1;}
+
+.main-block-shadow{background-position: 50% 100%;
+    bottom: -12px;
+    top: auto;}
+    
+       
+    .header-bgcolor {
+   background-image: url(../../images/style/inset-shadow.png);
+background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: contain;}
+
+   
+  .newflash-shadow  {
+   background-image: url(../../images/style/shadow.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+        height: 20px; margin-bottom: -20px;
+        }
+        
+      .bottom-b-shadow{
+   background-image: url(../../images/style/shadow-bottom.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+        height: 13px;
+        background-size: cover; margin: 0 15px -13px;}  
+        
+        
+
+
+
+

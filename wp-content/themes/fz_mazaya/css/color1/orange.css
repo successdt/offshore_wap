@@ -1,0 +1,45 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+.toolbar-bgcolor {border-bottom: 3px solid #dc502e;}
+a,
+.menu-dropdown li.active .level1 { color: #f16d1a; }
+
+.button-primary { background: #f16d1a; }
+
+
+/* Menus Hover----------------------------------------------------------------------------------------------------*/
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-top: 1px solid #e6866e; }
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1,
+.sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active, .sprocket-mosaic-loadmore, .sprocket-mosaic-hovercontent,
+.sprocket-lists li.active .sprocket-lists-title .indicator {
+background-color: #dc502e;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#ad3e2b), to(#dc502e));
+    background-image: -webkit-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: -moz-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: -o-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: -ms-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: radial-gradient(50% 50%, #dc502e, #ad3e2b);
+ }
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { background-image: url(../../images/style/menuhover/menu_dropdown_arrow_orange.png); }
+
+
+#menu-block .menu-dropdown a.level2:hover,
+#menu-block .menu-dropdown a.current.level2, 
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.current.level3 { color:#c44727; }
+
+/* Features - Layout Slideshow - Colors */
+.layout-slideshow .sprocket-features-title {background: rgba(216, 79, 46, 0.9);color: #fff;}
+
+
+/* Sprocket List----------------------------------------------------------------------------------------------------*/
+
+.sprocket-lists .sprocket-lists-pagination li.active, .sprocket-lists .sprocket-lists-pagination li.active:hover {background-color: #dd512e;}

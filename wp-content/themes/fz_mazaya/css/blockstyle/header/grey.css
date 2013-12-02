@@ -1,0 +1,14 @@
+.header-bgcolor{
+background-color: #f8f8f8;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#dbdbdb), to(#f8f8f8));
+background-image: -webkit-radial-gradient(50% 50%, #f8f8f8, #dbdbdb);
+background-image: -moz-radial-gradient(50% 50%, #f8f8f8, #dbdbdb);
+background-image: -o-radial-gradient(50% 50%, #f8f8f8, #dbdbdb);
+background-image: -ms-radial-gradient(50% 50%, #f8f8f8, #dbdbdb);
+background-image: radial-gradient(50% 50%, #f8f8f8, #dbdbdb);
+
+ }
+
+
+
+

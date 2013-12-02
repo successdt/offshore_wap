@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="template">
+	<name>Mazaya</name>
+	<version>1.0.0</version>
+	<creationDate>Jaun 2013</creationDate>
+	<author>Fawaniss</author>
+	<authorEmail>info@fawaniss.com</authorEmail>
+	<authorUrl>http://www.fawaniss.com</authorUrl>
+    <copyright>Copyright (C) Fawaniss</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<description>Mazaya Theme by Fawaniss</description>
+	<positions>
+	
+	
+	
+	
+	    <position>sidebar-a</position>
+		<position>sidebar-b</position>
+	    <position settings="display">toolbar-l</position>
+		<position settings="display">toolbar-r</position>
+		<position settings="display">logo</position>
+		<position settings="display">headerbar</position>
+		<position settings="display">newflash</position>
+		<position settings="display">search</position>
+		<position>top-a</position>
+		<position>top-b</position>
+		<position settings="display">menu</position>
+		<position settings="display">breadcrumbs</position>
+		<position>innertop</position>
+		<position>innerbottom</position>
+		<position settings="display">absolute</position>
+		<position settings="display">banner</position>
+		<position>bottom-a</position>
+		<position>bottom-b</position>
+		<position>bottom-c</position>
+		<position settings="display">footer</position>
+	</positions>
+	<modulesettings>
+		<setting name="title" type="list" label="Title" default="1">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</setting>
+		<setting name="style" type="style" label="Style" nav_menu="false">
+			<option name="Default" value="" />
+			<option name="Box" value="box" />
+			<option name="Box1" value="box1" />
+			<option name="Box2" value="box2" />
+			<option name="Box3" value="box3" />
+			<option name="Note" value="note" />
+			<option name="Simple" value="simple" />
+			<option name="dottedline" value="dottedline" />
+			<option name="divider" value="divider" />
+			<option name="Blank" value="blank" />
+		</setting>
+		<setting name="icon" type="text" label="Icon" />
+	
+		<setting name="badge" type="list" label="Badge">
+			<option value="">None</option>
+			<option value="hot">Hot</option>
+			<option value="new">New</option>
+			<option value="top">Top</option>
+			<option value="free">Free</option>
+		</setting>
+		<setting name="display" type="display" label="Display" />
+	</modulesettings>
+</install>

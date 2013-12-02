@@ -1,0 +1,17 @@
+.toolbar-bgcolor{
+    background-color: #cb2129;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#a41a21), to(#cb2129));
+    background-image: -webkit-radial-gradient(50% 50%, #cb2129, #a41a21);
+    background-image: -moz-radial-gradient(50% 50%, #cb2129, #a41a21);
+    background-image: -o-radial-gradient(50% 50%, #cb2129, #a41a21);
+    background-image: -ms-radial-gradient(50% 50%, #cb2129, #a41a21);
+    background-image: radial-gradient(50% 50%, #cb2129, #a41a21);
+    border: 1px solid #a91b22;
+    border-bottom-color: #8a161c;
+}
+
+
+
+
+
+

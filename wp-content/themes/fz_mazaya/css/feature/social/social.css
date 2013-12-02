@@ -1,0 +1,28 @@
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+.social-icons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.social-icons li {
+	float: left;
+	margin: 0 16px 0 0;
+	line-height: 25px;
+}
+
+.social-icons li a {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+
+}
+
+
+.social-icons a:hover { color: #fff; }
+
+

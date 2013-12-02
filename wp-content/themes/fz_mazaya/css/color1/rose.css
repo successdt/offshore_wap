@@ -1,0 +1,54 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+.toolbar-bgcolor {border-bottom: 3px solid #db93a1;}
+a,
+.menu-dropdown li.active .level1 { color: #c37683; }
+
+.button-primary { background: #c37683; }
+
+
+/* Menus Hover----------------------------------------------------------------------------------------------------*/
+
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-top: 1px solid #cc939f; }
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1,
+.sprocket-lists li.active .sprocket-lists-title .indicator,
+.sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active, .sprocket-mosaic-loadmore, .sprocket-mosaic-hovercontent  { background: #db93a1;
+	background: -moz-radial-gradient(center, ellipse cover, #db93a1 0%, #c88692 90%);
+	background: -webkit-radial-gradient(center, ellipse cover, #db93a1 0%, #c88692 90%);
+	background: -o-radial-gradient(center, ellipse cover, #db93a1 0%, #c88692 90%);
+	background: radial-gradient(ellipse at center, #db93a1 0%, #c88692 90%);
+	
+	
+	-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.1),inset 0 1px 1px rgba(225,225,225,0.4),inset 0 -1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow:0 1px 1px rgba(0,0,0,0.1),inset 0 1px 1px rgba(225,225,225,0.4),inset 0 -1px 1px rgba(0,0,0,0.1);
+box-shadow:0 1px 1px rgba(0,0,0,0.1),inset 0 1px 1px rgba(225,225,225,0.4),inset 0 -1px 1px rgba(0,0,0,0.1); 
+ }
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { background-image: url(../../images/style/menuhover/menu_dropdown_arrow_rose.png); }
+
+
+#menu-block .menu-dropdown a.level2:hover,
+#menu-block .menu-dropdown a.current.level2, 
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.current.level3 { color:#c4828f; }
+
+
+/* Features - Layout Slideshow - Colors */
+.layout-slideshow .sprocket-features-title {background: rgba(195, 118, 131, 0.8);color: #fff;}
+
+
+
+
+
+/* Sprocket List----------------------------------------------------------------------------------------------------*/
+
+.sprocket-lists .sprocket-lists-pagination li.active, .sprocket-lists .sprocket-lists-pagination li.active:hover {background-color: #db93a1;}

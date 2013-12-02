@@ -22,12 +22,20 @@
 						</div>                    
                         <div class="date" style="display: inline;">
                             <?php // the_time('j M Y') ?>
-                            <?php if(getDownloadLink()) : ?>
+                            <?php
+							$downloadLink = get_post_meta(get_the_ID(), 'download_link');
+							if(getDownloadLink()) : ?>
 								<a href="<?php echo getDownloadLink() ?>">
 										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
 										Download miễn phí
 								</a>                            	
-                            <?php endif ?>
+                            
+                            <?php elseif($downloadLink) : ?>
+								<a href="<?php echo $downloadLink[0] ?>">
+										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
+										Download miễn phí
+								</a>                            	
+                            <?php endif; ?>
                         </div>
 					</div>
 				<?php endwhile; ?>

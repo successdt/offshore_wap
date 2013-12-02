@@ -1,0 +1,13 @@
+.bottom-b-bgcolor {background-color: #ac274e;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#9a1f44), to(#ac274e));
+background-image: -webkit-radial-gradient(50% 50%, #ac274e, #9a1f44);
+background-image: -moz-radial-gradient(50% 50%, #ac274e, #9a1f44);
+background-image: -o-radial-gradient(50% 50%, #ac274e, #9a1f44);
+background-image: -ms-radial-gradient(50% 50%, #ac274e, #9a1f44);
+background-image: radial-gradient(50% 50%, #ac274e, #9a1f44);
+ }
+
+
+
+
+

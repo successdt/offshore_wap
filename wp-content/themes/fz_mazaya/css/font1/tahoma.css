@@ -1,0 +1,9 @@
+
+body { font-family: "tahoma", Verdana, Arial, sans-serif;; }
+div.itemIntroText {font-size: 13px;}
+
+.menu-dropdown span.subtitle {
+    font-family: tahoma;
+    font-size: 12px;
+    margin-top: 6px;
+}

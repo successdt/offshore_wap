@@ -1,0 +1,21 @@
+#page #system .item .featured-image {
+	margin: 0;
+}
+.featured-image img {
+	width: 100%;
+}
+.rpwe-block h3 {
+	margin-top: 0 !important;
+}
+.download {
+	width: 100%;
+	text-align: center;
+	background: #CC4A2D;
+}
+.download a,.download a:hover {
+	font-size: 14px;
+	color: #FFF;
+}
+.type-post .content img,.type-post .content div, .type-post .content p {
+	max-width: 100%;
+}

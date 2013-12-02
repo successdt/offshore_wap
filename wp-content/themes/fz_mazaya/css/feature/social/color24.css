@@ -1,0 +1,43 @@
+
+/* Social Icons
+----------------------------------------------------------------------------------------------------*/
+
+.social-icons {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+.social-icons li {
+	float: left;
+	margin: 0 6px 0 0;
+	line-height: 25px;
+}
+
+.social-icons li a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	float: left;
+	overflow: hidden;
+	background: url(../../../images/social/icons_social-color24.png) 0 0 no-repeat;
+	text-indent: 50px;
+}
+
+.social-icons .facebook a { background-position: 50% 0; }
+.social-icons .facebook a:hover { background-position: 50% -30px; }
+
+.social-icons .twitter a { background-position: 50% -60px; }
+.social-icons .twitter a:hover { background-position: 50% -90px; }
+
+
+.social-icons .gplus a { background-position: 50% -120px; }
+.social-icons .gplus a:hover { background-position: 50% -150px; }
+
+
+.social-icons .youtube a { background-position: 50% -180px; }
+.social-icons .youtube a:hover { background-position: 50% -210px; }
+
+.social-icons .rss a { background-position: 50% -240px; }
+.social-icons .rss a:hover { background-position: 50% -270px; }

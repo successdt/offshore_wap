@@ -1,0 +1,23 @@
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+#newflash-block, #bottom-a-block, #bottom-b-block, #footer-block, #main-block, #header-block, #header {margin: 0 !important;}
+.main-bgcolor {box-shadow: none !important;}
+.main-block-shadow { background-size: cover;}
+.sprocket-headlines-badge h3 {
+    font-size: 100%;
+    line-height: 20px;
+    margin: 0;
+}
+.sprocket-headlines-navigation .arrow {line-height: 1em !important;}
+
+/*.isblog #system div#list-layout .item, .noblog #system div#list-layout .item {margin: 0 10px;}*/
+
+
+.sprocket-mosaic-image-container { margin-right: -16px !important;}
+
+/* warp branding */ 
+#footer .warp-branding {
+    padding-right: 50px !important;
+    text-align: right !important;
+}

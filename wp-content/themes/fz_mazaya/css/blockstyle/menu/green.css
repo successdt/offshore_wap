@@ -1,0 +1,15 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+.menu-bgcolor{     background-color: #a7ca81;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#8db064), to(#a7ca81));
+    background-image: -webkit-radial-gradient(50% 50%, #a7ca81, #8db064);
+    background-image: -moz-radial-gradient(50% 50%, #a7ca81, #8db064);
+    background-image: -o-radial-gradient(50% 50%, #a7ca81, #8db064);
+    background-image: -ms-radial-gradient(50% 50%, #a7ca81, #8db064);
+    background-image: radial-gradient(50% 50%, #a7ca81, #8db064);
+
+ }
+
+
+
+

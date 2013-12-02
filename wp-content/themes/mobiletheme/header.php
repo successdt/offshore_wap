@@ -55,7 +55,33 @@
 		}else{
 			primarymenu();
 		}?>
-				
+		<div id="topMenu" class="ddsmoothmenu">
+			<ul id="menu-top-menu" class="menu">
+				<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9"><a href="http://gamechonloc.mobi/category/game">Games</a>
+				<ul class="sub-menu">
+					<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="http://gamechonloc.mobi/category/game/game-offline">Game Offline</a></li>
+					<li id="menu-item-27" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-27"><a href="http://gamechonloc.mobi/category/game/game-offline">Game Offline</a></li>
+					<li id="menu-item-33" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-33"><a href="http://gamechonloc.mobi/category/game/game-kinh-dien">Game Kinh điển</a></li>
+				</ul>
+				</li>
+				<li id="menu-item-42" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-42"><a href="http://gamechonloc.mobi/category/ung-dung">Ứng dụng</a></li>
+				<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="http://gamechonloc.mobi/category/tin-hot">Tin hot</a></li>
+				<li id="menu-item-28" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-28"><a href="http://gamechonloc.mobi/category/kenh-18">Kênh 18+</a>
+					<ul class="sub-menu">
+						<li id="menu-item-29" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-29"><a href="http://gamechonloc.mobi/category/kenh-18/anh-nong">Ảnh nóng</a></li>
+						<li id="menu-item-39" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-39"><a href="http://gamechonloc.mobi/category/kenh-18/anh-hot-girl">Ảnh hot girl</a></li>
+						<li id="menu-item-36" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-36"><a href="http://gamechonloc.mobi/category/kenh-18/hot-clip">Hot clip</a></li>
+					</ul>
+				</li>
+				<li id="menu-item-41" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-41"><a href="http://gamechonloc.mobi/category/truyen">Truyện</a>
+					<ul class="sub-menu">
+						<li id="menu-item-727" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-727"><a href="http://gamechonloc.mobi/category/truyen/truyen-cuoc-song">Truyện cuộc sống</a></li>
+						<li id="menu-item-728" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-728"><a href="http://gamechonloc.mobi/category/truyen/truyen-cuoi">Truyện cười</a></li>
+						<li id="menu-item-729" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-729"><a href="http://gamechonloc.mobi/category/truyen/truyen-tuoi-teen">Truyện tuổi teen</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>		
 	</div>
 	
 		<?php

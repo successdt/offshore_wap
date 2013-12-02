@@ -1,0 +1,12 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@font-face {
+	font-family: 'oswald';
+	src: url('oswald.eot');
+	src: url('oswald.eot?#iefix') format('embedded-opentype'),
+		 url('oswald.woff') format('woff'),
+		 url('oswald.ttf') format('truetype'),
+		 url('oswald.svg#oswald') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

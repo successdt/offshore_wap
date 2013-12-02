@@ -1,0 +1,73 @@
+.toolbar-bgcolor {border-bottom: 3px solid #222;}
+a,
+.menu-dropdown li.active .level1 { color: #000 }
+/* Menus Hover----------------------------------------------------------------------------------------------------*/
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-top: 1px solid #434343; }
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1,
+.sprocket-mosaic .sprocket-mosaic-filter li.active,
+.sprocket-mosaic .sprocket-mosaic-order li.active,
+.sprocket-mosaic-loadmore,
+.sprocket-mosaic-hovercontent,
+.sprocket-lists li.active .sprocket-lists-title .indicator {
+background-color: #434343;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#1a1a1a), to(#434343));
+background-image: -webkit-radial-gradient(50% 50%, #434343, #1a1a1a);
+background-image: -moz-radial-gradient(50% 50%, #434343, #1a1a1a);
+background-image: -o-radial-gradient(50% 50%, #434343, #1a1a1a);
+background-image: -ms-radial-gradient(50% 50%, #434343, #1a1a1a);
+background-image: radial-gradient(50% 50%, #434343, #1a1a1a);
+
+
+}
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { background-image: url(../../images/style/menuhover/menu_dropdown_arrow_dark.png) }
+#menu-block .menu-dropdown a.level2:hover,
+#menu-block .menu-dropdown a.current.level2,
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.current.level3 { color: #434343; }
+/* sprocket mosaic----------------------------------------------------------------------------------------------------*/
+.sprocket-mosaic .sprocket-mosaic-filter li.active,
+.sprocket-mosaic .sprocket-mosaic-order li.active,
+.sprocket-mosaic-loadmore,
+.sprocket-mosaic-hovercontent { color: #fff }
+
+
+/* Features - Layout Slideshow - Colors */
+/* Features - Layout Slideshow - Colors */
+.layout-slideshow .sprocket-features-title {background: rgba(0, 0, 0, 0.9);color: #fff;}
+/* Sprocket List----------------------------------------------------------------------------------------------------*/
+.sprocket-lists .sprocket-lists-pagination li.active,
+.sprocket-lists .sprocket-lists-pagination li.active:hover { background-color: #434343; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

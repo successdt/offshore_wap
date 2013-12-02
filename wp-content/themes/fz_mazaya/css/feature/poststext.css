@@ -1,0 +1,37 @@
+.post-text {
+    display: none ;
+}
+
+#page #system .items .featured-image {
+    display: block;
+   margin-bottom: -25px;
+    margin-top: 15px;
+}
+
+
+
+#system .items  p.meta {
+    margin-bottom: 5px;
+     margin-top: 35px;
+}
+#system .items header {
+    margin-bottom: 0;
+}
+
+#system .item div.item-footer {
+    margin: 20px -15px -15px;
+    padding: 15px 12px;
+}
+
+
+#system .items h1.title {
+    background: none repeat scroll 0 0 transparent;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+
+
+#system div.post-type span {
+    bottom: 0;
+}

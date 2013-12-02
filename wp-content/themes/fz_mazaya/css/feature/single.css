@@ -1,0 +1,196 @@
+#related { margin: 15px 0 }
+#related p.meta { margin: 0 }
+.signal-block { margin: 30px 0 }
+#related .relatedposts .width33 { padding: 0 5px }
+#related .relatedposts .grid-block { margin: 0 -5px }
+#related .relatedposts  .small_thumb img { display: block }
+#related .relatedposts .small_thumb img {
+    height: auto;
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+#related .relatedposts .grid-block h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 10px;
+    padding: 0;
+}
+#related .relatedposts h3 {
+    margin: 0 0 15px;
+    padding: 0;
+}
+#related .relatedposts a { color: #666 }
+.social-links li {
+    display: inline;
+    float: left;
+    height: 24px;
+    list-style: none outside none;
+    padding: 0 5px;
+    text-align: center;
+    width: 24px;
+    font-size: 18px;
+}
+.profile-links ul.social-links {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.profile-links {
+    border-top: 1px dotted #DDDDDD;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+
+
+
+
+#related { overflow: hidden }
+#related ul {
+    margin: 0;
+    padding: 0;
+}
+#relatedposts ul li {
+    float: left;
+    height: auto;
+    margin-right: 15px;
+}
+#related .attachment-related-thumb img {
+    width: 200px;
+    height: auto;
+}
+/*
+ * Video Post format */
+#system div.format-video .post-video {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+}
+#system .post-video iframe {
+    max-height: 400px;
+    max-width: 100%;
+    width: 100%;
+}
+#system .post-video .mejs-container { margin-bottom: 10px }
+/*
+ * Audio Post format */
+#system div.format-audio .post-audio {
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+/*posts list layout */
+.isblog #system div.list-layout .item {
+    border: 0 none;
+    box-shadow: none;
+    padding: 15px;
+}
+.isblog #system div.list-layout .item .featured-image {
+    display: block;
+    float: left;
+    margin: 0 15px 0 0 !important;
+    max-width: 100%;
+    width: 260px;
+    max-height: 170px;
+    height: auto;
+}
+
+
+
+/*  posts list layout 2 cloumun  */
+.isblog #system div.width50 div.list-layout .item .featured-image {
+    display: block;
+    float: none;
+    margin: 0 0 15px !important;
+    max-width: 100%;
+    width: 100%;
+    max-height: 200px;
+}
+
+
+
+
+
+#page #system div.width100 div.list-layout .featured-image img.wp-post-image {
+    max-height: auto;
+    overflow: hidden;
+}
+#system div.list-layout .item { margin: 0 -5px }
+#system div.list-layout .item > header { margin: 0 !important }
+#system div.items div.list-layout h1.title {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+#system div.list-layout .item > header .meta {
+    margin-bottom: 5px;
+    margin-left: -8px;
+    margin-top: 5px;
+}
+
+
+#system div.width50 div.list-layout .item > header .meta {
+    margin-left: 0px;
+}
+
+#system div/list-layout h1.title {
+    font-size: 20px;
+    margin: 0 !important;
+}
+
+
+#system div.width50 div.list-layout .item { margin: 0 -5px }
+.isblog #system div.width50 div.list-layout .item {
+    border: 0 none;
+    box-shadow: none;
+    padding: 15px;
+}
+/* post grid layout */
+.featured-image,
+.sprocket-mosaic-image-container { overflow: hidden }
+#page #system div.width50 div.list-layout .featured-image img.wp-post-image {
+
+    overflow: hidden;
+}
+.isblog #system div.list-layout .item,
+.noblog #system div.list-layout .item {
+    background: transparent;
+    border: 0 none;
+    box-shadow: none;
+}
+
+
+
+
+#system div.list-layout .item > header .meta span {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+#system div.list-layout .item h1.title {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+
+
+#system .items > .width33 div.list-layout .title {
+    font-size: 18px !important;
+    line-height: 28px;
+}
+
+
+#system div.list-layout p.links
+{
+    margin: 0;
+}
+
+
+.isblog #system div.list-layout .item:first-child, .noblog #system div.list-layout .item:first-child {
+    padding-top: 10px;
+}
+
+
+.isblog #system div.list-layout span.more {
+    margin: 0 10px;
+}

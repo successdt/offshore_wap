@@ -1,0 +1,10 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+a { color: #F14833; }
+
+.button-primary {
+	border-color: #F14833;
+	background-color: #F14833;
+}
+
+.sprocket-lists li .sprocket-lists-title:hover .indicator{background: #F14833; }

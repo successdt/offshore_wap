@@ -1,0 +1,31 @@
+/*  image effects
+------------------------------*/
+
+
+#page #system .item .featured-image {
+    max-height: 200px;
+}
+
+
+.featured-image img {
+    border: none;
+    max-height: 200px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.featured-image img:hover{
+    -webkit-transform: scale(1.15) rotate(-1.5deg);
+    -moz-transform: scale(1.15) rotate(-1.5deg);
+    -ms-transform: scale(1.15) rotate(-1.5deg);
+    -o-transform: scale(1.15) rotate(-1.5deg);
+    transform: scale(1.15) rotate(-1.5deg);
+}
+
+
+
+
+ 
+
+ 

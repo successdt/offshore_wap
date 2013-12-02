@@ -1,0 +1,97 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/ie8.css);
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Search Box */
+.searchbox input { line-height: 30px; }
+
+
+/* Style
+----------------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Button Costum Gray
+----------------------------------------------------------------------------------------------------*/
+
+a.buttoncostum.gray  {
+background-color: #f9f9f9;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#ffffff),to(#f9f9f9));
+background-image: -webkit-radial-gradient(50% 50%, #f9f9f9, #ffffff);
+background-image: -moz-radial-gradient(50% 50%, #f9f9f9, #ffffff);
+background-image: -o-radial-gradient(50% 50%, #f9f9f9, #ffffff);
+background-image: -ms-radial-gradient(50% 50%, #f9f9f9, #ffffff);
+background-image: radial-gradient(50% 50%, #f9f9f9, #ffffff);
+border: 1px solid #D9D9D9;
+}
+
+
+
+
+/* K2 Image Item
+----------------------------------------------------------------------------------------------------*/
+
+span.catItemImage   { width:100%;}
+div.catItemCategory { position: relative; }
+span.catItemImage img   { width:auto !important;}
+
+
+/* Breadcrumbs
+----------------------------------------------------------------------------------------------------*/
+
+
+ul#breadcrumbs span.lastlink {
+     height: 25px !important;
+    overflow: hidden;
+    padding: 10px 10px 10px 30px;}
+ul#breadcrumbs li {height: 25px !important;padding: 10px 10px 10px 30px;}
+
+/* Roksprocket
+----------------------------------------------------------------------------------------------------*/
+.sprocket-headlines .sprocket-headlines-navigation .arrow ,.layout-slideshow .sprocket-features-desc { background: #000; filter:alpha(opacity=50);  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75); }
+ .sprocket-headlines .sprocket-headlines-navigation .arrow {-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";}
+
+.layout-slideshow .sprocket-features-title { background: #333;  filter:alpha(opacity=50);  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);}
+    
+ 
+/* Menu Sidebar
+----------------------------------------------------------------------------------------------------*/   
+ .menu-sidebar li.level1 > a, .menu-sidebar li.level1 > span { background: transparent;}
+
+
+
+.mod-note      {background-color: #e2e2e2;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(226, 226, 226)), to(rgb(251, 251, 251)));
+background-image: -webkit-linear-gradient(top, rgb(226, 226, 226), rgb(251, 251, 251));
+background-image: -moz-linear-gradient(top, rgb(226, 226, 226), rgb(251, 251, 251));
+background-image: -o-linear-gradient(top, rgb(226, 226, 226), rgb(251, 251, 251));
+background-image: -ms-linear-gradient(top, rgb(226, 226, 226), rgb(251, 251, 251));
+background-image: linear-gradient(top, rgb(226, 226, 226), rgb(251, 251, 251));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#e2e2e2', EndColorStr='#fbfbfb');
+border: 1px solid #E0E0E0;}

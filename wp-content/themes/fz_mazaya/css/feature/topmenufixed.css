@@ -1,0 +1,16 @@
+/* Only Phones */
+@media (max-width:767px) {
+#header-block { padding-top: 0 !important; }
+}
+
+
+#toolbar-block {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#header-block {padding-top: 60px;}
+
+

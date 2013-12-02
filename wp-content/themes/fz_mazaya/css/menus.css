@@ -1,0 +1,254 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+@import url(../warp/css/menus.css);
+/* Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+#menu-block .menu-dropdown,
+#menu-block .menu-dropdown .level1,
+#menu-block .menu-dropdown .level1 > span { float: none }
+/* Level 1 */
+#menu-block .menu-dropdown li.level1 { margin-bottom: 5px }
+#menu-block .menu-dropdown a.level1,
+#menu-block .menu-dropdown span.level1 {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+#menu-block .menu-dropdown a.level1 > span,
+#menu-block .menu-dropdown span.level1 > span {
+    cursor: pointer;
+    display: table-cell;
+    height: 85px;
+    line-height: 24px;
+    max-width: 85px;
+    text-align: center;
+    vertical-align: middle;
+    width: 85px;
+}
+/* Set Active + Hover */
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 {
+    position: relative;
+    z-index: 101;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.2) inset;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+}
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -6px;
+    width: 7px;
+    height: 14px;
+    margin-top: -4px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+/* Drop-Down */
+#menu-block .menu-dropdown .dropdown {
+    top: -5px;
+    left: 100%;
+    -webkit-backface-visibility: hidden;
+}
+#menu-block .menu-dropdown .dropdown-bg > div {
+    margin: 5px 5px 5px 0;
+    padding: 15px 20px;
+    background: #fff;
+    background: rgba(255,255,255,0.96);
+    border-radius: 0 3px 3px 0;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+
+
+#menu-block .menu-dropdown a.level1, .menu-dropdown span.level1 { border-top: 1px solid transparent;}
+
+/* Level 2 */
+#menu-block .menu-dropdown li.level2 { margin: 0 5px }
+#menu-block .menu-dropdown a.level2,
+#menu-block .menu-dropdown span.level2 { color: #666 }
+/*.menu-dropdown a.level2 > span, .menu-dropdown span.level2 > span {font-size: 120%;}_NO__DOTCOMMA__AFTER__*/
+/* Level 3 */
+#menu-block .menu-dropdown a.level3 {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    color: #666;
+}
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.level3.current { background-position: 0 -100px }
+.menu-dropdown a.level3 > span,
+.menu-dropdown span.level3 > span { padding: 3px 0 }
+.menu-dropdown a.level3 { padding-left: 5px }
+/* Icons */
+#menu-block .menu-dropdown .level1 .level1 span.icon {
+    width: 70px;
+    height: 30px;
+    margin-left: 6px;
+    margin-bottom: 3px;
+    background-position: 50% 0;
+    float: none;
+}
+#menu-block .menu-dropdown .level1:hover .level1 span.icon,
+#menu-block .menu-dropdown .level1.active .level1 span.icon,
+#menu-block .menu-dropdown .level1.remain .level1 span.icon { }
+#menu-block .menu-dropdown .level1 .level1 span.icon + span,
+#menu-block .menu-dropdown .level1 .level1 span.icon + span + span { margin-left: 0 }
+/* Subtitles */
+#menu-block .menu-dropdown span.subtitle {
+    font-size: 10px;
+    margin-top: 4px;
+}
+#menu-block .menu-dropdown a.level1,
+#menu-block .menu-dropdown span.level1 { border-bottom: 1px solid rgba(0, 0, 0, 0.1) }
+#menu-block .menu-dropdown span.separator,
+#toolbar-block .menu-dropdown span.separator { font-size: 120% }
+/* Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+/* Link */
+.menu-sidebar a,
+.menu-sidebar li > span { color: #666 }
+/* Level 1 */
+.menu-sidebar li.level1 { padding-top: 5px }
+.menu-sidebar li.level1 > a,
+.menu-sidebar li.level1 > span {
+    background: #e3e3e3;
+    background: rgba(0,0,0,0.04);
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.menu-sidebar a.level1 > span,
+.menu-sidebar span.level1 > span { padding: 5px 10px }
+/* Parent */
+.menu-sidebar li.parent .level1 > span {
+    padding-right: 20px;
+    background: url(../images/menu_sidebar_parent.png) 100% 0 no-repeat;
+}
+/* Hover */
+.menu-sidebar li.level1:hover .level1 {
+    background: #ddd;
+    background: rgba(0,0,0,0.08);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.04), 0 0 2px rgba(0,0,0,0.05) inset, 0 1px 0 rgba(0,0,0,0.1) inset;
+    color: #666;
+}
+.menu-sidebar li.parent:hover .level1 > span { background-position: 100% -100px }
+/* Active */
+.menu-sidebar li.level1 .level1.active {
+    position: relative;
+    box-shadow: 0 -1px 1px rgba(0,0,0,0.2) inset;
+    /*color: #fff;*/
+    text-shadow: 0 1px 1px rgba(0,0,0,0.15);
+}
+/* Parent Active */
+.menu-sidebar li.parent .level1.active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    left: 15px;
+    width: 13px;
+    height: 8px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.menu-sidebar li.parent .level1.active > span { background: none }
+/* Level 2-4 */
+.menu-sidebar ul.level2 { padding: 10px 15px 5px 15px }
+.menu-sidebar .level2 a > span {
+    padding-left: 17px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    line-height: 18px;
+}
+.menu-sidebar .level2 a:hover > span,
+.menu-sidebar .level2 a.current > span { background-position: 0 -100px }
+.menu-sidebar ul.level2 ul { padding-left: 12px }
+.menu-sidebar ul.level2 li { list-style: disc }
+/* Line Menu
+----------------------------------------------------------------------------------------------------*/
+.menu-line li {
+    margin-left: 7px;
+    padding-left: 8px;
+    background: url(../images/menu_line_item.png) 0 50% no-repeat;
+}
+.menu-line li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    background: none;
+}
+/* Top Menu */
+/* Mega Drop-Down Menu
+----------------------------------------------------------------------------------------------------*/
+/* Level 1 */
+#toolbar-block .menu-dropdown { margin-bottom: 0px }
+#toolbar-block .menu-dropdown li.level1 {
+    margin-bottom: -13px;
+    margin-right: 10px;
+    padding-bottom: 13px;
+}
+#toolbar-block .menu-dropdown a.level1,
+#toolbar-block .menu-dropdown span.level1 { color: #ffffff }
+/* Set Hover */
+#toolbar-block .menu-dropdown li.level1:hover .level1,
+#toolbar-block .menu-dropdown li.remain .level1 { color: #d50 }
+/* Drop-Down */
+#toolbar-block .menu-dropdown .dropdown {
+    top: 43px;
+    z-index: 999;
+}
+#toolbar-block .menu-dropdown .dropdown-bg > div {
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    border-top: none;
+background-color: #fbfbfb;
+background-image: -webkit-gradient(radial, 50% 100%,0,50% 100%,200, from(#f1f1f1), to(#fbfbfb));
+background-image: -webkit-radial-gradient(50% 100%, #fbfbfb, #f1f1f1);
+background-image: -moz-radial-gradient(50% 100%, #fbfbfb, #f1f1f1);
+background-image: -o-radial-gradient(50% 100%, #fbfbfb, #f1f1f1);
+background-image: -ms-radial-gradient(50% 100%, #fbfbfb, #f1f1f1);
+background-image: radial-gradient(50% 100%, #fbfbfb, #f1f1f1);
+}
+.menu-dropdown span.icon {
+    min-height: 24px;
+    min-width: 24px;
+}
+/* Level 2 */
+#toolbar-block .menu-dropdown li.level2 {
+    margin: 0 5px;
+    border-top: 1px solid #ddd;
+}
+#toolbar-block .menu-dropdown li.level2:first-child { border: none }
+#toolbar-block .menu-dropdown a.level2,
+#toolbar-block .menu-dropdown span.level2 { color: #444 }
+/* Set Hover */
+#toolbar-block .menu-dropdown a.level2:hover { color: #d50 }
+/* Set Current */
+#toolbar-block .menu-dropdown a.current.level2 { font-weight: bold }
+/* Set Hover */
+#toolbar-block .menu-dropdown a.level3:hover { color: #d50 }
+/* Set Current */
+#toolbar-block .menu-dropdown a.current.level3 { font-weight: bold }
+#toolbar-block .menu-dropdown a.level1,
+.menu-dropdown span.level1 { font-size: 14px }
+#toolbar-block .menu-dropdown li.level1.parent:hover,
+#toolbar-block .menu-dropdown li.remain.parent {
+    background-image: url(../images/style/dropdown-arrow.png);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+}
+#toolbar-block .menu-dropdown a.level2 > span,
+#toolbar-block .menu-dropdown span.level2 > span { padding: 10px 0 }
+#toolbar-block .menu-dropdown a.level1 > span,
+#toolbar-block .menu-dropdown span.level1 > span { padding: 0 5px }
+#toolbar-block .menu-dropdown li.parent a.level1 > span,
+#toolbar-block .menu-dropdown li.parent span.level1 > span {
+    background-image: url(../images/style/parent-arrow.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    padding-right: 15px;
+}
+

@@ -1,0 +1,60 @@
+ body{
+            font: 13px Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        h2{
+            font-size: 23px;
+            font-weight: normal;
+        }
+        h4{
+            margin: 0px 0px 10px;
+        }
+        hr{
+            border-width: 0px;
+            margin: 10px -10px;
+            border-bottom: 1px solid #dfdfdf;
+        }
+               
+        .btn_insert{
+            -moz-border-radius:5px;
+            -webkit-border-radius:5px;
+            border-radius:5px;
+            -moz-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow:1px 1px 2px rgba(0, 0, 0, 0.5);
+            background: -moz-linear-gradient(19% 65% 90deg,#0087B4, #0099CC, #0099CC 51%);
+            background: -webkit-gradient(linear, 0% 45%, 0% 60%, from(#0099CC), to(#0087B4));
+            color:#FFFFFF;
+            padding:5px 15px;
+            text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);
+            border: 1px solid #267ed4;
+            font-weight: bold;
+        }
+        
+        .btn_insert:hover{
+            background: -moz-linear-gradient(19% 65% 90deg,#0082AD, #0099CC, #0099CC 51%);
+            background: -webkit-gradient(linear, 0% 45%, 0% 60%, from(#0099CC), to(#0082AD));
+            color: #f1f1f1;
+        }
+        label.label{
+            padding: 5px;
+            width: 40%;
+            margin: 0px 25px 10px 0px;
+            cursor: pointer;
+            display:inline-block;
+        }
+        input[type=text], textarea{
+            padding: 5px;
+            border: 1px solid #ccc;
+            box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+            -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+            -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            width: 40%;
+            margin: 0px 25px 10px 0px;
+            cursor: pointer;
+        }
+        select{
+            width: 40%;
+        }

@@ -5,7 +5,7 @@
  * @package WordPress
  * @subpackage Administration
  */
-
+set_time_limit(300);
 /** WordPress Administration Bootstrap */
 require_once( './admin.php' );
 

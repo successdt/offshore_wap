@@ -1,0 +1,14 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@font-face {
+	font-family: 'Gsstfont';
+	src: url('gesstwomedium-webfont.eot');
+	src: url('gesstwomedium-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('gesstwomedium-webfont.woff') format('woff'),
+		 url('gesstwomedium-webfont.ttf') format('truetype'),
+		 url('gesstwomedium-webfont.otf') format('opentype'),
+		 url('gesstwomedium-webfont.svg#Gsstfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

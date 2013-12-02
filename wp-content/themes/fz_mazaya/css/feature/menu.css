@@ -1,0 +1,19 @@
+.menu-dropdown span.subtitle {
+    font-size: 11px;
+    margin-top: 0px;
+}
+
+#toolbar-block .menu-dropdown .dropdown-bg > div {padding: 15px 10px;}
+.menu-dropdown li.level3 {
+    font-size: 13px;
+    line-height: 24px;
+    text-indent: 4px;
+}
+
+#toolbar-block div.dropdown-bg .module  { color: #666666;float: none;padding: 10px;}
+
+.menu-sidebar .level2 a > span {
+font-size: 13px;
+    line-height: 24px;
+    padding-left: 10px;
+}

@@ -11,7 +11,9 @@
 					</div>
 						<div class="content">
 							<br/>
-							<?php if(getDownloadLink()): ?>
+							<?php
+							$downloadLink = get_post_meta(get_the_ID(), 'download_link');
+							if(getDownloadLink()): ?>
 							<div align="center">
 								<div class="download">
 									<a href="<?php echo getDownloadLink() ?>">
@@ -20,10 +22,21 @@
 									</a>								
 								</div>							
 							</div>
+							<?php elseif($downloadLink): ?>
+								<div align="center">
+									<div class="download">
+										<a href="<?php echo $downloadLink[0] ?>">
+											<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
+											Download miễn phí
+										</a>								
+									</div>							
+								</div>							
 							<?php endif ?>
 							<?php the_content(); ?>
 							
-							<?php if(getDownloadLink()): ?>
+							<?php
+							$downloadLink = get_post_meta(get_the_ID(), 'download_link');
+							if(getDownloadLink()): ?>
 							<div align="center">
 								<div class="download">
 									<a href="<?php echo getDownloadLink() ?>">
@@ -32,6 +45,15 @@
 									</a>								
 								</div>							
 							</div>
+							<?php elseif($downloadLink): ?>
+								<div align="center">
+									<div class="download">
+										<a href="<?php echo $downloadLink[0] ?>">
+											<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
+											Download miễn phí
+										</a>								
+									</div>							
+								</div>							
 							<?php endif ?>
 
 						</div>

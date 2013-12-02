@@ -1,0 +1,49 @@
+.toolbar-bgcolor {border-bottom: 3px solid #c1b73f;}
+a,
+.menu-dropdown li.active .level1 { color: #c6bd41; }
+
+
+
+/* Menus Hover----------------------------------------------------------------------------------------------------*/
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-top: 1px solid #ded88f; }
+
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1,
+.sprocket-lists li.active .sprocket-lists-title .indicator,
+.sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active, .sprocket-mosaic-loadmore , .sprocket-mosaic-hovercontent {  background-color: #c1b73f;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(rgb(227, 216, 75)), to(rgb(193, 183, 63)));
+background-image: -webkit-radial-gradient(50% 50%, rgb(193, 183, 63), rgb(227, 216, 75));
+background-image: -moz-radial-gradient(50% 50%, rgb(193, 183, 63), rgb(227, 216, 75));
+background-image: -o-radial-gradient(50% 50%, rgb(193, 183, 63), rgb(227, 216, 75));
+background-image: -ms-radial-gradient(50% 50%, rgb(193, 183, 63), rgb(227, 216, 75));
+background-image: radial-gradient(50% 50%, rgb(193, 183, 63), rgb(227, 216, 75));
+ color:#333;}
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { background-image: url(../../images/style/menuhover/menu_dropdown_arrow_yellow.png); }
+
+
+#menu-block .menu-dropdown a.level2:hover,
+#menu-block .menu-dropdown a.current.level2, 
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.current.level3 { color:#c6bd41; }
+
+/* Features - Layout Slideshow - Colors */
+.layout-slideshow .sprocket-features-title {background: rgba(198, 189, 65, 0.8);color: #fff;}
+
+
+/* k2 ----------------------------------------------------------------------------------------------------*/
+.latestView div.latestItemCategory, div.catItemCategory, div.tagItemCategory {background: rgba(198, 189, 65, 0.8);}
+
+
+
+/* Sprocket List----------------------------------------------------------------------------------------------------*/
+.sprocket-lists .sprocket-lists-pagination li.active, .sprocket-lists .sprocket-lists-pagination li.active:hover {background-color: #c1b73f;}

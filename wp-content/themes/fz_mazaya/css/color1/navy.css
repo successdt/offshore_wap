@@ -1,0 +1,47 @@
+.toolbar-bgcolor {border-bottom: 3px solid #2a5291;}
+a,
+.menu-dropdown li.active .level1 { color: #36b; }
+
+.button-primary { background: #36b; }
+
+
+/* Menus Hover----------------------------------------------------------------------------------------------------*/
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-top: 1px solid #6891d3; }
+
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1,
+.sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active, .sprocket-mosaic-loadmore, .sprocket-mosaic-hovercontent,
+.sprocket-lists li.active .sprocket-lists-title .indicator { background-color: #2a5291;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(rgb(54, 104, 184)), to(rgb(42, 82, 145)));
+background-image: -webkit-radial-gradient(50% 50%, rgb(42, 82, 145), rgb(54, 104, 184));
+background-image: -moz-radial-gradient(50% 50%, rgb(42, 82, 145), rgb(54, 104, 184));
+background-image: -o-radial-gradient(50% 50%, rgb(42, 82, 145), rgb(54, 104, 184));
+background-image: -ms-radial-gradient(50% 50%, rgb(42, 82, 145), rgb(54, 104, 184));
+background-image: radial-gradient(50% 50%, rgb(42, 82, 145), rgb(54, 104, 184));
+ }
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { background-image: url(../../images/style/menuhover/menu_dropdown_arrow_navy.png); }
+
+
+#menu-block .menu-dropdown a.level2:hover,
+#menu-block .menu-dropdown a.current.level2, 
+#menu-block .menu-dropdown a.level3:hover,
+#menu-block .menu-dropdown a.current.level3 { color:#36b; }
+
+
+/* sprocket mosaic----------------------------------------------------------------------------------------------------*/ 
+.sprocket-mosaic .sprocket-mosaic-filter li.active, .sprocket-mosaic .sprocket-mosaic-order li.active, .sprocket-mosaic-loadmore, .sprocket-mosaic-hovercontent {color: #fff;}
+
+/* Features - Layout Slideshow - Colors */
+.layout-slideshow .sprocket-features-title {background: rgba(51, 102, 187, 0.8);color: #fff;}
+
+
+
+/* Sprocket List----------------------------------------------------------------------------------------------------*/
+.sprocket-lists .sprocket-lists-pagination li.active, .sprocket-lists .sprocket-lists-pagination li.active:hover {background-color: #2a5291;}

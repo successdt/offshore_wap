@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fields name="General">
+		<field name="profile_default" type="profile" default="" label="Default Profile" description="Select the profile which should be loaded by default." />
+		<field name="profile_dynamic" type="radio" default="1" label="Dynamic Profiles" description="Allow profiles to be loaded by URL.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="compression" type="list" default="3" label="Compression" description="Minify and combine CSS and JavaScript into a single file. Use gzip compression and Data URIs to reduce image file requests.">
+			<option value="0">None</option>
+			<option value="1">Combination + Minify</option>
+			<option value="2">Combination + Minify + Data URIs</option>
+			<option value="3">Combination + Minify + Data URIs + Gzip</option>
+		</field>
+		<field name="outdated_browser" type="radio" default="1" label="Upgrade Page" description="Redirect outdated browsers to the upgrade page.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	
+		<field name="verify" type="verify" label="Verify Files" description="Detect and show all file modifications." />
+		<field name="check" type="check" label="System Check" description="Detects system issues." />
+
+	</fields>
+
+	<fields name="Profiles">	
+	<field name="Logo" type="separator" />
+	
+	<field name="logo_class" type="list" default="logo" label="Logo Type" description="Select the Logo Type.">
+        <option value="logo">Image</option>
+		<option value="logotext">Site Title</option>
+		<option value="nonelogo">No Logo</option>
+	</field>
+
+	<field name="costumlogo" type="text" default="logo.png" label="Logo Image" description="Insert your Costum Logo Image name. (Images Folder Path is wp-content/themes/fw_mazaya/images/logo)."/>
+	<field name="logo_url" type="text" default="index.php" label="Logo Link" description="Insert Logo Link."/>
+	<field name="logo_margin" type="text" class="spinner short" default="5" label="Logo Margin" description="Set the Logo Margin in pixel."/>
+
+						<field name="Content" type="separator" />
+		<field name="date" type="radio" default="0" label="Date" description="Show the date.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="totop_scroller" type="radio" default="1" label="To-Top Scroller" description="Show the to-top scroller.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="warp_branding" type="radio" default="1" label="Warp Branding" description="Show the Warp branding.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="system_output" type="radio" default="1" label="System Output" description="Show the system output.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		
+		 <field name="footer_text" type="text"  label="Your Footer Text" description="Insert your custom text or copyright in the footer section." />
+		
+		
+		<field name="Layout" type="separator" />
+		<field name="responsive" type="radio" default="1" label="Responsive Layout" description="Enable responsive layout.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="template_width" type="text" size="10" default="1300" label="Template Width" description="Set the template width in pixel." class="short" />
+		<field name="sidebar-a_width" type="text" size="10" default="28" label="Sidebar A Width" description="Set the Sidebar A width in percent." class="short" />
+		<field name="sidebar-b_width" type="text" size="10" default="16" label="Sidebar B Width" description="Set the Sidebar B width in percent." class="short" />
+		<field name="sidebar-a" type="list" default="right" label="Sidebar A Position" description="Align the sidebar to the left or right.">
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</field>
+		<field name="sidebar-b" type="list" default="right" label="Sidebar B Position" description="Align the sidebar to the left or right.">
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</field>
+		<field name="top-a" type="layout" default="equal" label="Top A Layout" description="Select a grid layout for this module position." />
+		<field name="top-b" type="layout" default="equal" label="Top B Layout" description="Select a grid layout for this module position." />
+		<field name="innertop" type="layout" default="equal" label="Inner Top Layout" description="Select a grid layout for this module position." />
+		<field name="innerbottom" type="layout" default="equal" label="Inner Bottom Layout" description="Select a grid layout for this module position." />
+		<field name="bottom-a" type="layout" default="equal" label="Bottom A Layout" description="Select a grid layout for this module position." />
+		<field name="bottom-b" type="layout" default="equal" label="Bottom B Layout" description="Select a grid layout for this module position." />
+		<field name="bottom-c" type="layout" default="equal" label="Bottom C Layout" description="Select a grid layout for this module position." />
+		
+		</fields>
+       
+		 <tabone name="Styling">
+
+		 	<field name="imageanimation" type="radio" default="" label="Image Animation" description="Enable Image Hover Animation.">
+		 	<option value="imageanimation">Yes</option>
+	        <option value="">No</option>
+		</field>
+		 
+		<field name="shadowstyle" type="radio" default="shadowstyle" label="Shadow Style" description="Enable Shadow Style.">
+		<option value="shadowstyle">Yes</option>
+		<option value="">No</option>
+		</field>
+		
+			<field name="borderradius" type="radio" default="borderradius" label="Border Radius" description="Enable Border Radius Style.">
+		<option value="borderradius">Yes</option>
+		<option value="">No</option>
+			
+		</field>
+		
+		<field name="Style" type="separator" />
+		<field name="style" type="styles" default="" label="Style" description="Select the style variation." />		
+		<field name="color1" type="list" default="Blue" label="Primary Color" description="Select the primary color.">
+			<option value="blue">Blue</option>
+			<option value="dark">Dark</option>
+			<option value="grey">grey</option>
+			<option value="orange">Orange</option>
+			<option value="green">Green</option>
+			<option value="navy">Navy</option>
+			<option value="red">Red</option>
+			<option value="pink">Pink</option>
+			<option value="salmon">Salmon</option>
+			<option value="turquoise">Turquoise</option>
+			<option value="rose">Rose</option>
+				<option value="yellow">Yellow</option>
+		</field>
+		<field name="color2" type="list" default="Orange" label="Secondary Color" description="Select the secondary color.">
+			<option value="">Orange</option>
+			<option value="blue">Blue</option>
+			<option value="green">Green</option>
+			<option value="navy">Navy</option>
+			<option value="red">Red</option>
+			<option value="pink">Pink</option>
+			<option value="salmon">Salmon</option>
+			<option value="turquoise">Turquoise</option>
+			<option value="rose">Rose</option>
+		</field>
+
+		 
+            	<field name="Background" type="separator" />
+		<field name="background-color" type="text" class="fanousscolor"  size="10" default="#f0f0f0" label="Background Color" description="Select the Background Color." />
+        <field name="background-image" type="text"  size="10" default="none" label="Background Image" description="Select the Background Image." />
+        
+        
+        
+        
+        <field name="background-pattern" type="list" default="honey_im_subtle.png" label="Background Pattern" description="Select the page-pattern.">
+    		<option value="">None</option>
+    		<option value="bedge_grunge.jpg">Bedge Grunge</option>
+    		<option value="binding_light.jpg">Binding Light</option>
+    		<option value="bright_squares.jpg">Bright Squares</option>
+    		<option value="climpek.png">Climpek</option>
+    		<option value="egg_shell.jpg">Egg Shell</option>
+    		<option value="honey_im_subtle.png">Honey im Subtle</option>
+    		<option value="kindajean.png">Kinda Jean</option>
+    		 <option value="leather.png">Leather</option>
+    		 <option value="lghtmesh.png">Lght Mesh</option>
+    		 <option value="linedpaper.jpg">linedpaper</option>
+    			<option value="lyonnette.png">Lyonnette</option>
+    			<option value="mochagrunge.jpg">Mocha Grunge</option>
+    			<option value="noise.png">Noise</option>
+    		  <option value="shattered.jpg">Shattered</option>
+    		  <option value="tweed.jpg">Tweed Dark</option>
+    		  <option value="tiny_grid.png">Tiny Grid</option>
+    		   <option value="white_tiles.png">White Tiles</option>
+    		    <option value="wood.png">Wood </option>
+    		   <option value="wood1.jpg">Wood 1</option>
+    			 <option value="wood2.jpg">Wood 2</option>
+    			  <option value="wood3.jpg">Wood 3</option>	
+    	</field>
+		
+	</tabone>
+
+	
+	 <tabtwo name="Menus">
+
+	 		<field name="font3" type="list" default="opensans" label="Menu Font" description="Select the menu typeface.">
+			<option value="arial">Arial</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="timesnewroman">Times New Roman</option>
+			<option value="trebuchet">Trebuchet</option>
+			<option value="droidsans">Droid Sans</option>
+			<option value="opensans">Open Sans</option>
+			<option value="yanonekaffeesatz">Yanone Kaffeesatz</option>
+			<option value="mavenpro">Maven Pro</option>
+			<option value="kreon">Kreon</option>
+			<option value="oswald">Oswald</option>
+			<option value="creteround">Crete Round</option>
+			<option value="notosans">Noto Sans</option>
+			<option value="tahoma">Tahoma</option>
+			<option value="droidkufi">Droid kufi</option>
+			<option value="gesstwomedium">Gess Arabic two medium</option>
+		</field>
+	
+	<field name="Top Menu" type="separator" />
+	<field name="topmenufixed" type="radio" default="" label="Top Menu Fixed" description="Fixed The top menu.">
+		<option value="topmenufixed">Yes</option>
+		<option value="">No</option></field>
+	
+	
+	
+	<field name="topmenuresponsive" type="radio" default="" label="Display on mobile devices" description="Display The top menu on mobile devices.">
+		<option value="topmenuresponsive">Yes</option>
+		<option value="">No</option></field>
+	
+	
+	<field name="topmenu-fontsize" type="text" class="spinner short" size="10" default="13" label="Menu Font Size" description="Set the Menu Font Size in pixel." />
+	<field name="topmenu-link-color" type="text"  size="10" default="default" label="Menu Link Color" description="Set the Menu Link Color."  />
+    <field name="topmenu-link-hover" type="text"  size="10" default="default" label="Menu Link Hover" description="Set the Menu Link Hover Color."  />
+    <field name="menutoolbar_width" type="text" size="10" default="260" label="Drop Down Column Width" description="Set the column width of the drop down menu in pixel." class="short" />	
+
+   <field name="Vertical menu" type="separator" /> 
+   <field name="verticalmenu" type="radio" default="" label="Display Vertical Menu" description="Display Vertical Menu.">
+			<option value="">Yes</option>
+			<option value="verticalmenu">No</option>
+		</field>
+			<field name="menustyle" type="list" default="dark" label="Menu Gradiant" description="Select the Menu Gradiant Ready Style.">
+			 <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+		</field>
+		    <field name="menu-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Menu Background Color" description="Select the Menu bgcolor." />
+		       <field name="menu-fontsize" type="text" class="spinner short" size="10" default="15" label="Menu Font Size" description="Set the Menu Font Size in pixel." />
+	    	<field name="menu-link-color" type="text"  size="10" default="default" label="Menu Text Color" description="Select the Menu Link Color."  />
+		<field name="menu_width" type="text" size="10" default="260" label="Drop Down Column Width" description="Set the column width of the drop down menu in pixel." class="short" />
+	</tabtwo>
+	
+	
+
+	
+	 <tabthree name="Blocks">
+	 
+	 <field name="blocks-padding" type="text" class="spinner short" size="10" default="15" label="Blocks Padding" description="Set the Blocks Padding in pixel." />
+	 
+	
+	<field name="Toolbar" type="separator" />
+		
+			<field name="toolbarstyle" type="list" default="dark" label="Toolbar Style" description="Select the Toolbar style.">
+	        <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+		</field>
+		
+		
+				
+		
+		    <field name="toolbar-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Toolbar Background Color" description="Set the Toolbar Background color." />
+            <field name="toolbar-color" type="text"  size="10" default="#fff" label="Toolbar Text Color" description="Set the Toolbar Toolbar Text Color."  />
+	    	<field name="toolbar-link-color" type="text"  size="10" default="default" label="Toolbar Link Color" description="Set the Toolbar Link Color."  />
+
+		   <field name="toolbar-pattern" type="list" default="None" label="Toolbar Pattern" description="Select the Toolbar Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+
+		</field>
+
+<field name="top-a" type="separator" />
+	<field name="topastyle" type="list" default="blue" label="Top A Style" description="Select the Top A style.">
+	        <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+					</field>
+	
+		    <field name="top-a-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Top A Background Color" description="Set the Top A Background color." />
+            <field name="top-a-color" type="text"  size="10" default="#fff" label="Top A Text Color" description="Set the Top A Text Color."  />
+	    	<field name="top-a-link-color" type="text"  size="10" default="#fff" label="Top A Link Color" description="Set the Top A Link Color."  />
+
+		   <field name="top-a-pattern" type="list" default="None" label="Top A Pattern" description="Select the Top A Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+
+
+	
+	<field name="Header" type="separator" />
+
+		<field name="headerstyle" type="list" default="None" label="Header Gradiant" description="Select the Header Gradiant Ready Style.">
+			 <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+		</field>
+		
+		
+		
+				    <field name="header-bgcolor" type="text" class="fanousscolor"  size="10" default="#fff" label="Header Background Color" description="Select the Header bgcolor." />
+            <field name="header-color" type="text"  size="10" default="default" label="Header Text Color" description="Select the Header Toolbar Text Color."  />
+	    	<field name="header-link-color" type="text"  size="10" default="default" label="Header Link Color" description="Select the Header Link Color."  />
+	    	
+
+
+		   <field name="header-pattern" type="list" default="None" label="Header Pattern" description="Select the Header Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+
+
+
+
+
+	<field name="Newflach" type="separator" />
+		<field name="newflashstyle" type="list" default="blue" label="newflash Gradiant" description="Select the newflash Gradiant Ready Style.">
+		  <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+
+
+		</field>
+		
+		
+		<field name="newflash-padding" type="text" class="spinner short" size="10" default="10" label="newflash Padding" description="Select the newflash Padding in pixel." />		
+		    <field name="newflash-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="newflash Background Color" description="Select the newflash bgcolor." />
+            <field name="newflash-color" type="text"  size="10" default="#fff" label="newflash Text Color" description="Select the newflash Toolbar Text Color."  />
+	    	<field name="newflash-link-color" type="text"  size="10" default="default" label="newflash Link Color" description="Select the newflash Link Color."  />
+	    	
+
+
+		   <field name="newflash-pattern" type="list" default="None" label="newflash Pattern" description="Select the newflash Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+
+
+
+	<field name="Main Body" type="separator" />
+		<field name="mainstyle" type="list" default="None" label="Mainbody Gradiant" description="Select the Mainbody Gradiant style.">
+		  <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+
+
+		</field>
+		
+		
+		    <field name="main-bgcolor" type="text" class="fanousscolor"  size="10" default="#fff" label="Main Body Background Color" description="Set the Main Body bgcolor." />
+            <field name="main-color" type="text"  size="10" default="default" label="Main Body Text Color" description="Set the Main Body Text Color."  />
+	    	<field name="main-link-color" type="text"  size="10" default="default" label="Main Body Link Color" description="Set the Main Body Link Color."  />
+	    	
+
+
+		   <field name="main-pattern" type="list" default="None" label="Main Body Pattern" description="Select the Main Body Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+
+
+	
+		<field name="Bottom a" type="separator" />
+	<field name="bottomastyle" type="list" default="blue" label="Bottom A Style" description="Select the Bottom A style.">
+	        <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>		</field>
+	
+		    <field name="bottom-a-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Bottom A Background Color" description="Set the Bottom A Background color." />
+            <field name="bottom-a-color" type="text"  size="10" default="default" label="Bottom A Text Color" description="Set the Bottom A Text Color."  />
+	    	<field name="bottom-a-link-color" type="text"  size="10" default="default" label="Bottom A Link Color" description="Set the Bottom A Link Color."  />
+
+		   <field name="bottom-a-pattern" type="list" default="None" label="Bottom A Pattern" description="Select the Bottom A Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+	
+
+	
+	
+	<field name="Bottom B" type="separator" />
+	<field name="bottombstyle" type="list" default="dark" label="Bottom B Style" description="Select the Bottom B style.">
+	        <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>		</field>
+	
+		    <field name="bottom-b-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Bottom B Background Color" description="Set the Bottom B Background color." />
+            <field name="bottom-b-color" type="text"  size="10" default="default" label="Bottom B Text Color" description="Set the Bottom B Text Color."  />
+	    	<field name="bottom-b-link-color" type="text"  size="10" default="default" label="Bottom B Link Color" description="Set the Bottom B Link Color."  />
+
+		   <field name="bottom-b-pattern" type="list" default="wood.png" label="Bottom B Pattern" description="Select the Bottom B Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+	
+	
+		<field name="Bottom C" type="separator" />
+	<field name="bottomcstyle" type="list" default="" label="Bottom C Style" description="Select the Bottom C style.">
+	        <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>		</field>
+	
+		    <field name="bottom-c-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Bottom C Background Color" description="Set the Bottom C Background color." />
+            <field name="bottom-c-color" type="text"  size="10" default="#333" label="Bottom C Text Color" description="Set the Bottom C Text Color."  />
+	    	<field name="bottom-c-link-color" type="text"  size="10" default="#444" label="Bottom C Link Color" description="Set the Bottom C Link Color."  />
+
+		   <field name="bottom-c-pattern" type="list" default="" label="Bottom C Pattern" description="Select the Bottom C Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+	
+	
+	<field name="Footer" type="separator" />
+	<field name="footerstyle" type="list" default="dark" label="Footer Style" description="Select the Footer style.">
+	        <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>		</field>
+	
+		<field name="footer-padding" type="text" class="spinner short" size="10" default="15" label="Footer Padding" description="Set the Footer Padding in pixel." />
+
+		    <field name="footer-bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Footer Background Color" description="Set the Footer Background color." />
+            <field name="footer-color" type="text"  size="10" default="default" label="Footer Text Color" description="Set the Footer Text Color."  />
+	    	<field name="footer-link-color" type="text"  size="10" default="default" label="Footer Link Color" description="Set the Footer Link Color."  />
+
+		   <field name="footer-pattern" type="list" default="" label="Footer Pattern" description="Select the Footer Pattern.">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		</field>
+	</tabthree>
+
+	
+	<tabfour name="Modules">
+	<field name="module-margin" type="text" class="spinner short" size="10" default="10" label="Module Margin" description="Set the Module Margin in pixel." />		
+	<field name="module-padding" type="text" class="spinner short" size="10" default="15" label="Module Padding" description="Set the Module Padding in pixel." />
+	<field name="moduleh3fontsize" type="text" class="spinner short" size="10" default="18" label="Module Title Font Size" description="Set the Module Title Font Size in pixel." />
+	
+	<field name="Box Style" type="separator" />
+
+	<field name="boxstyle" type="list" default="" label="Box Style" description="Select the Box style.">
+	<option value="">None</option>
+			<option value="blank">Blank</option>
+			<option value="blue-gradiant">Blue Gradiant</option>
+			<option value="grey-gradiant">Grey Gradiant</option>
+			<option value="dark-gradiant">Dark Gradiant</option>
+			<option value="rose-gradiant">Rose Gradiant</option>
+			<option value="green-gradiant">Green Gradiant</option>
+			<option value="turquoise-gradiant">Turquoise Gradiant</option>
+			<option value="raspberryred-gradiant">Raspberryred Gradiant</option>
+		</field>
+
+		
+		  <field name="boxbgcolor" type="text" class="fanousscolor"  size="10" default="#ffffff" label="Box Background" description="Select the Box Background Color." />
+	   	 <field name="boxmodule-title" type="text"  size="10" default="default" label="Box Title Color" description="Select the Box Title Color." />
+		 <field name="boxmodule-text" type="text"  size="10" default="default" label="Box Text Color" description="Select the Box Text Color." />
+		 <field name="boxlink-color" type="text"  size="10" default="default" label="Box Link Color" description="Select the Box Link Color." />
+
+
+       <field name="boxpattern" type="list" default="" label="Box Pattern" description="Select the Box Pattern .">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		   </field>
+
+
+	<field name="Box1 Style" type="separator" />
+
+	<field name="box1style" type="list" default="dark" label="Box1 Style" description="Select the Box1 style.">
+	<option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+		</field>
+
+		
+			 <field name="box1bgcolor" type="text" class="fanousscolor"  size="10" default="default" label="Box1 Background" description="Select the Box1 BG Color." />
+
+	   	 <field name="box1module-title" type="text"  size="10" default="#ffffff" label="Box1 Title Color" description="Select the Box1 Title Color." />
+		 <field name="box1module-text" type="text"  size="10" default="#d4d4d4" label="Box1 Text Color" description="Select the Box1 Text Color." />
+		 <field name="box1link-color" type="text"  size="10" default="#ffffff" label="Box1 Link Color" description="Select the Box1 Link Color." />
+
+	
+	<field name="box1pattern" type="list" default="" label="Box Pattern" description="Select the Box1 Pattern .">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		   </field>
+
+	
+	<field name="Box2 Style" type="separator" />
+
+	<field name="box2style" type="list" default="blue" label="Box2 Style" description="Select the Box2 style.">
+	<option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+		</field>
+
+		
+			 <field name="box2bgcolor" type="text" class="fanousscolor"  size="20" default="default" label="Box2 Background" description="Select the Box2 BG Color." />
+	   	 <field name="box2module-title" type="text"  size="20" default="#fff" label="Box2 Title Color" description="Select the Box2 Title Color." />
+		 <field name="box2module-text" type="text"  size="20" default="#eee" label="Box2 Text Color" description="Select the Box2 Text Color." />
+		 <field name="box2link-color" type="text"  size="20" default="#eee" label="Box2 Link Color" description="Select the Box2 Link Color." />
+
+  <field name="box2pattern" type="list" default="" label="Box Pattern" description="Select the Box2 Pattern .">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		   </field>
+
+
+
+	
+	
+	<field name="Box3 Style" type="separator" />
+
+	<field name="box3style" type="list" default="grey" label="Box3 Style" description="Select the Box3 style.">
+	 <option value="">None</option>
+			<option value="blue">Blue Gradiant</option>
+			<option value="dark">Dark Gradiant</option>
+			<option value="green">Green Gradiant</option>
+			<option value="grey">Grey Gradiant</option>
+			<option value="orange">Orange Gradiant</option>
+			<option value="red">Red Gradiant</option>
+			<option value="raspberryred">Raspberryred Gradiant</option>
+			<option value="rose">Rose Gradiant</option>
+			<option value="turquoise">Turquoise Gradiant</option>
+			<option value="yellow">Yellow Gradiant</option>
+		</field>
+
+		
+			 <field name="box3bgcolor" type="text" class="fanousscolor"  size="30" default="default" label="Box3 Background" description="Select the Box3 BG Color." />
+	   	 <field name="box3module-title" type="text"  size="30" default="default" label="Box3 Title Color" description="Select the Box3 Title Color." />
+		 <field name="box3module-text" type="text"  size="30" default="default" label="Box3 Text Color" description="Select the Box3 Text Color." />
+		 <field name="box3link-color" type="text"  size="30" default="default" label="Box3 Link Color" description="Select the Box3 Link Color." />
+	
+	
+	<field name="box3pattern" type="list" default="" label="Box Pattern" description="Select the Box3 Pattern .">
+			<option value="">None</option>
+			<option value="metal.png">Metal</option>
+			<option value="square.png">square</option>
+			<option value="carbon.png">Carbon</option>
+			<option value="denim.png">Denim</option>
+			<option value="diagonal.png">Diagonal</option>
+			<option value="dustnscratches.png">Dustnscratches</option>
+			<option value="grid.png">Grid</option>
+			<option value="grunge.png">Grunge</option>
+            <option value="plaid.png">Plaid</option>
+            <option value="plaid-fabric.png">Plaid Fabric</option>
+            <option value="planks.png">Planks</option>
+	        <option value="rfabric.png">Rough Fabric</option>
+            <option value="ravenna.png">Ravenna</option>
+            <option value="textile.png">Textile</option>
+             <option value="wood.png">Wood</option>
+		   </field>
+
+
+	</tabfour>
+	
+<tabfive name="Typography">
+	
+
+<field name="font1" type="list" default="opensans" label="Body Font" description="Select the main body typeface.">
+			<option value="arial">Arial</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="timesnewroman">Times New Roman</option>
+			<option value="trebuchet">Trebuchet</option>
+			<option value="droidsans">Droid Sans</option>
+			<option value="opensans">Open Sans</option>
+			<option value="yanonekaffeesatz">Yanone Kaffeesatz</option>
+			<option value="mavenpro">Maven Pro</option>
+			<option value="kreon">Kreon</option>
+			<option value="tahoma">Tahoma</option>
+			<option value="droidkufi">Droid kufi</option>
+		</field>
+		
+		
+		<field name="font2" type="list" default="creteround" label="Header Font" description="Select the headings typeface.">
+			<option value="arial">Arial</option>
+			<option value="lucida">Lucida</option>
+			<option value="georgia">Georgia</option>
+			<option value="timesnewroman">Times New Roman</option>
+			<option value="trebuchet">Trebuchet</option>
+			<option value="droidsans">Droid Sans</option>
+			<option value="opensans">Open Sans</option>
+			<option value="yanonekaffeesatz">Yanone Kaffeesatz</option>
+			<option value="mavenpro">Maven Pro</option>
+			<option value="kreon">Kreon</option>
+			<option value="oswald">Oswald</option>
+			<option value="creteround">Crete Round</option>
+			<option value="notosans">Noto Sans</option>
+			<option value="tahoma">Tahoma</option>
+			<option value="droidkufi">Droid kufi</option>
+			<option value="gesstwomedium">Gess Arabic two medium</option>
+		</field>
+		
+<field name="Body Font" type="separator" />
+<field name="bodyfontsize" type="text" class="spinner short" size="10" default="13" label="Body Font Size" description="Set the Body Font Size in pixel." />
+<field name="bodylineheight" type="text" class="spinner short" size="10" default="24" label="Body Line Height" description="Set the Body Line Height in pixel." />
+<field name="bodycolor" type="text"  size="10" default="#444" label="Body Font Color" description="Set the Body Font Color." />
+
+<field name="Post Headings" type="separator" />
+
+<field name="h1fontsize" type="text" class="spinner short" size="10" default="26" label="H1 Font Size" description="Set the H1 Font Size in pixel." />		
+ <field name="h1fontcolor" type="text"  size="10" default="#444" label="H1 Font Color" description="Set the H1 Font Color." />
+
+<field name="h2fontsize" type="text" class="spinner short" size="10" default="22" label="H2 Font Size" description="Set the H2 Font Size in pixel." />		
+ <field name="h2fontcolor" type="text"  size="10" default="#444" label="H2 Font Color" description="Set the H2 Font Color." />
+
+
+<field name="h3fontsize" type="text" class="spinner short" size="10" default="20" label="H3 Font Size" description="Set the H3 Font Size in pixel." />		
+ <field name="h3fontcolor" type="text"  size="10" default="#147aa0" label="H3 Font Color" description="Set the H3 Font Color." />
+
+
+<field name="h4fontsize" type="text" class="spinner short" size="10" default="18" label="H4 Font Size" description="Set the H4 Font Size in pixel." />		
+ <field name="h4fontcolor" type="text"  size="10" default="#444" label="H4 Font Color" description="Set the H4 Font Color." />
+
+<field name="h5fontsize" type="text" class="spinner short" size="10" default="16" label="H5 Font Size" description="Set the H5 Font Size in pixel." />		
+ <field name="h5fontcolor" type="text"  size="10" default="#444" label="H5 Font Color" description="Set the H5 Font Color." />
+
+ 
+ <field name="h6fontsize" type="text" class="spinner short" size="10" default="14" label="H6 Font Size" description="Set the H6 Font Size in pixel." />		
+ <field name="h6fontcolor" type="text"  size="10" default="#444" label="H6 Font Color" description="Set the H6 Font Color." />
+	
+	</tabfive>
+
+	<tabsix name="Custom">
+            	<field name="tracking_code" type="textarea" rows="8" cols="30" label="Tracking Code" description="Insert your Google Analytics tracking code." />
+			  	<field name="custom_css" type="textarea" rows="8" cols="30" label="Custom CSS" description="Insert your custom css to be included in the head section." />
+	</tabsix>
+
+<tabseven name="Wordpress">
+		<field name="date_format" type="text" default="d. M Y" label="Date Format" description="Set the date format." />
+
+		<field name="Frontpage Posts" type="separator" />
+		<field name="multicolumns" type="list" default="1" label="Frontpage Multi Columns" description="Set the number of item columns on the frontpage.">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</field>
+		
+		<field name="multicolumns_order" type="radio" default="1" label="Multi Columns Order" description="Set the items order to across or down.">
+			<option value="1">Across</option>
+			<option value="0">Down</option>
+		</field>	
+	
+	
+	
+		<field name="posts-layout" type="radio" default="1" label="Posts Layout" description="Select the layout of posts in homepage and category.">
+	        <option value="1">Box Layout</option>
+			<option value="0">Normal Layout</option>
+		</field>
+		
+			<field name="post-title-fronpage" type="text" class="spinner short" size="10" default="18" label="Posts title font size" description="Set the font size of posts title in homapage and category." />		
+
+     <field name="poststext" type="radio" default="Yes" label="Show Posts Text" description="Show/Hide the content text description.">
+			<option value="poststext">No</option>
+			<option value="">Yes</option>
+		</field>
+
+	<field name="blog_view_meta" type="radio" default="1" label="Show Meta Info" description="Show/Hide the content meta info in home page and category posts.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+
+	<field name="item-links" type="radio" default="1" label="Show Item Links" description="Show/Hide the categorys and readmore in home page and category posts.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="strip-html" type="radio" default="1" label="Strip HTML" description="strip HTML tags from post description in home page and category.">
+		    <option value="0">No</option>
+	        <option value="1">Yes</option>
+			
+		</field>
+		
+
+		<field name="Single Post" type="separator" />
+		
+			<field name="single-meta-info" type="radio" default="block" label="Meta Info in Single Post" description="Enable/Disable the content meta info in single post.">
+			<option value="none">No</option>
+			<option value="block">Yes</option>
+		</field>
+		
+		
+
+		<field name="relatedbox" type="radio" default="block" label="Display Related Posts" description="Display Related Posts in your Posts.">
+			<option value="none">No</option>
+			<option value="block">Yes</option>
+		</field>
+		
+		
+		<field name="authorbox" type="radio" default="block" label="Display Author Box" description="Display Author Box in your Posts.">
+			<option value="none">No</option>
+			<option value="block">Yes</option>
+		</field>
+		
+
+</tabseven>
+
+<eight name="Social">
+
+
+		
+		   	<field name="socialicons" type="radio" default="social" label="Display Social Icons" description="Display the Social Icons in the toolbar.">
+			<option value="none">No</option>
+			<option value="social">Yes</option>
+		</field>
+		
+		  	<field name="social-icons-color" type="text"  class="fanousscolor" default="#d4d4d4" label="Social Icons Color" description="Select the Social Icons Color." />
+           <field name="social-icons-hover" type="text"  class="fanousscolor" default="#fff" label="Social Icons Hover Color" description="Select the Social Icons Hover Color." />
+         <field name="social-icons-size" type="text"  default="20" label="Social Icons Size" description="Set the Social Icons Size." />
+		
+		
+		<field name="Display Social Icons" type="separator" />
+		
+		 	<field name="facebook-display" type="radio" default="1" label="Facebook Display" description="Display the Facebook Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+			<field name="twitter-display" type="radio" default="1" label="Twitter Display" description="Display the Twitter Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+			<field name="google-plus-display" type="radio" default="1" label="Google-Plus Display" description="Display the Google-Plus Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="youtube-display" type="radio" default="1" label="Youtube Display" description="Display the Youtube Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="dribbble-display" type="radio" default="0" label="Dribbble Display" description="Display the Dribbble Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="flickr-display" type="radio" default="0" label="Flickr Display" description="Display the Flickr Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+			<field name="linkedin-display" type="radio" default="0" label="Linkedin Display" description="Display the Linkedin Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		
+		<field name="pinterest-display" type="radio" default="0" label="Pinterest Display" description="Display the Pinterest Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="instagram-display" type="radio" default="0" label="Instagram Display" description="Display the Instagram Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+		<field name="soundcloud-display" type="radio" default="0" label="Soundcloud Display" description="Display the Soundcloud Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+
+		<field name="rss-display" type="radio" default="1" label="Rss Display" description="Display the Rrs Social Icon in the toolbar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+	
+<field name="Social icons Urls" type="separator" />
+<field name="facebook_url" type="text" default="http://facebook.com" label="Facebook" description="Insert your Facebook URL."/>
+<field name="twitter_url" type="text" default="https://twitter.com" label="Twitter" description="Insert your Twitter URL."/>
+<field name="gplus_url" type="text" default="https://plus.google.com" label="Google plus" description="Insert your Google plus URL."/>
+<field name="youtube_url" type="text" default="http://www.youtube.com" label="Youtube" description="Insert your Youtube URL."/>
+<field name="dribbble_url" type="text" default="http://www.dribbble.com" label="Dribbble" description="Insert your Dribbble URL."/>
+<field name="flickr_url" type="text" default="http://www.flickr.com" label="Flickr" description="Insert your Flickr URL."/>
+<field name="linkedin_url" type="text" default="http://www.linkedin.com" label="Linkedin" description="Insert your Linkedin URL."/>
+<field name="pinterest_url" type="text" default="http://www.pinterest.com" label="Pinterest" description="Insert your Pinterest URL."/>
+<field name="instagram_url" type="text" default="http://www.instagram.com" label="Instagram" description="Insert your Instagram URL."/>
+<field name="soundcloud_url" type="text" default="http://www.soundcloud.com" label="Soundcloud" description="Insert your Soundcloud URL."/>
+<field name="rss_url" type="text" default="index.php" label="Rss URL" description="Insert your Facebook URL."/>
+<field name="Posts Social Buttons" type="separator" />
+
+
+<field name="twitter" type="radio" default="0" label="Twitter Button" description="Display a Tweet button in your articles.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="plusone" type="radio" default="0" label="Google+ Button" description="Display a Google+ button in your articles.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		<field name="facebook" type="radio" default="0" label="Facebook Button" description="Display a facebook like button in your articles.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</field>
+		
+
+</eight>
+
+</config>

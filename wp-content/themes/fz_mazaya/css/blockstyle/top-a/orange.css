@@ -1,0 +1,15 @@
+.top-a-bgcolor {
+    background-color: #dc502e;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#ad3e2b), to(#dc502e));
+    background-image: -webkit-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: -moz-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: -o-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: -ms-radial-gradient(50% 50%, #dc502e, #ad3e2b);
+    background-image: radial-gradient(50% 50%, #dc502e, #ad3e2b);
+}
+
+
+
+
+
+

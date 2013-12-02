@@ -1,0 +1,14 @@
+.menu-bgcolor {    background-color: #12a8d9;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#2499c2), to(#00b7f0));
+    background-image: -webkit-radial-gradient(50% 50%, #00b7f0, #2499c2);
+    background-image: -moz-radial-gradient(50% 50%, #00b7f0, #2499c2);
+    background-image: -o-radial-gradient(50% 50%, #00b7f0, #2499c2);
+    background-image: -ms-radial-gradient(50% 50%, #00b7f0, #2499c2);
+    background-image: radial-gradient(50% 50%, #00b7f0, #2499c2);
+
+  
+ }
+
+
+
+

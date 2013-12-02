@@ -1,0 +1,12 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@font-face {
+	font-family: 'NotoSansRegular';
+	src: url('notoSans-regular-webfont.eot');
+	src: url('notoSans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('notoSans-regular-webfont.woff') format('woff'),
+		 url('notoSans-regular-webfont.ttf') format('truetype'),
+		 url('notoSans-regular-webfont.svg#NotoSansRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

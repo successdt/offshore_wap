@@ -1,0 +1,8 @@
+div.latestItemsCategory , div.catItemImageBlock img, span.latestItemImage img, .layout-slideshow .sprocket-features-img-list, .sprocket-mosaic-item, .sprocket-mosaic-item .sprocket-mosaic-head,.sprocket-mosaic-loadmore,.sprocket-mosaic .sprocket-mosaic-filter ul li, #main .sprocket-mosaic .sprocket-mosaic-filter ul li, .sprocket-mosaic .sprocket-mosaic-filter li, .sprocket-mosaic .sprocket-mosaic-filter li, #newflashbar .searchbox, #itemListPrimary div.catItemView, #itemListSecondary div.catItemView, div.itemAuthorBlock, div.itemCommentsForm form textarea.inputbox, div.itemCommentsForm form input.inputbox, .isblog #system .item, .noblog #system .item {
+  border-radius: 4px;
+}
+
+.mod-box, .boxbgcolor, .boxpattern,.mod-box1, .box1bgcolor, .box1pattern, .mod-box2, .box2bgcolor, .box2pattern, .mod-box3, .box3bgcolor, .box3pattern, .mod-box4, .box4bgcolor, .box4pattern, .mod-box5, .box5bgcolor, .box5pattern, .mod-box6, .box6bgcolor, .box6pattern {
+  border-radius: 4px;
+}
+

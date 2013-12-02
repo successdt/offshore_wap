@@ -1,0 +1,12 @@
+.newflash-bgcolor {background-color: #cf8b97;
+background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#b96774), to(#cf8b97));
+background-image: -webkit-radial-gradient(50% 50%, #cf8b97, #b96774);
+background-image: -moz-radial-gradient(50% 50%, #cf8b97, #b96774);
+background-image: -o-radial-gradient(50% 50%, #cf8b97, #b96774);
+background-image: -ms-radial-gradient(50% 50%, #cf8b97, #b96774);
+background-image: radial-gradient(50% 50%, #cf8b97, #b96774);
+ }
+
+
+
+

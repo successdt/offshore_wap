@@ -28,13 +28,20 @@
 							<?php echo getTheDescription($post->post_content);?>
 						</div>                    
 	                    <div class="date" style="display: inline;">
-	                        <?php if(getDownloadLink($post->post_content)) : ?>
-								
+	                        <?php
+							$downloadLink = get_post_meta(get_the_ID(), 'download_link');
+							if(getDownloadLink($post->post_content)) : ?>
 								<a href="<?php echo getDownloadLink($post->post_content) ?>">
-									<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
-									Download miễn phí
-								</a>	                            	
-	                        <?php endif ?>
+										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
+										Download miễn phí
+								</a>                            	
+                            
+                            <?php elseif($downloadLink) : ?>
+								<a href="<?php echo $downloadLink[0] ?>">
+										<img src="<?php echo get_bloginfo('url') ?>/wp-content/themes/mobiletheme/images/download2.png" alt="download" />
+										Download miễn phí
+								</a>                            	
+                            <?php endif; ?>
 	                    </div>        	
 	                </div>
 			 		<?php endforeach ?>

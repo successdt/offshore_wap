@@ -1,0 +1,365 @@
+#mainfanouss {
+   margin-left: 0;
+    margin-right: 100px;
+}
+
+
+
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+/* Mega Drop-Down Menu */
+#menu-block .menu-dropdown, 
+#menu-block .menu-dropdown .level1,
+#menu-block .menu-dropdown .level1 > span { float: none; }
+
+#menu-block .menu-dropdown li.active .level1,
+#menu-block .menu-dropdown li.level1:hover .level1,
+#menu-block .menu-dropdown li.remain .level1 { border-radius: 0 3px 3px 0; }
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after {
+	right: auto;
+	left: -6px;
+	background-position:  0 50%;
+	background-repeat: no-repeat;
+}
+
+#menu-block .menu-dropdown li.active .level1:after,
+#menu-block .menu-dropdown li.level1:hover .level1:after,
+#menu-block .menu-dropdown li.remain .level1:after { transform: rotate(180deg);
+   -moz-transform: rotate(180deg);
+   -webkit-transform: rotate(180deg);
+ }
+
+#menu-block .menu-dropdown .dropdown { 
+	left: 0;
+	right: 100%;
+}
+
+#menu-block .menu-dropdown .dropdown-bg > div {
+	margin: 5px 0 5px 5px;
+	border-radius: 3px 0 0 3px;
+}
+
+#menu-block .menu-dropdown a.level3 {
+	padding-left: 0;
+	padding-right: 15px;
+	background-position: 100% 0;
+}
+
+#menu-block .menu-dropdown a.level3:hover, 
+#menu-block .menu-dropdown a.level3.current { background-position: 100% -100px; }
+
+#menu-block .menu-dropdown .level1 .level1 span.icon {
+	margin-right: 0;
+	float: none;
+}
+
+#menu-block .menu-dropdown .level1 .level1 span.icon + span,
+#menu-block .menu-dropdown .level1 .level1 span.icon + span + span { margin-right: 0; }
+
+#menu-block .menu-dropdown .level1 .level1 span.icon {
+    float: none;
+    margin-right: 10px;
+}
+
+.menu-dropdown li.level1 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#menu-block .menu-dropdown li.active .level1, #menu-block .menu-dropdown li.level1:hover .level1, #menu-block .menu-dropdown li.remain .level1 {border-radius: 0 0 0 0;}
+#toolbar-block .menu-dropdown li.parent a.level1 > span, .menu-dropdown li.parent span.level1 > span {    
+     background-position: 0 50%;
+    padding-left: 15px;
+    padding-right: 10px;
+
+}
+
+
+
+/* Newflasbar
+----------------------------------------------------------------------------------------------------*/
+/* Search */
+
+
+/* newflash */
+#newflash {float: right;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Roksprocket
+----------------------------------------------------------------------------------------------------*/
+
+.sprocket-headlines-badge {
+    float: right;
+}
+
+.sprocket-headlines .sprocket-headlines-list {
+    float: right;
+    overflow: hidden;
+   /* padding: 0 60px 0 10px !important;*/
+}
+
+.sprocket-headlines .sprocket-headlines-navigation {
+    left: auto;
+    right: 100px;
+}
+.sprocket-headlines-navigation .arrow {
+float: left !important;
+    margin-left: 5px;
+    margin-right: 0 !important;
+}
+
+.layout-slideshow .sprocket-features-arrows .next {
+    left: 15px;
+    right: auto !important;
+}
+
+.layout-slideshow .sprocket-features-arrows .prev {
+    left: 45px;
+    right: auto !important;
+}
+
+.layout-slideshow .sprocket-features-pagination {
+    left: 80px;
+    right: auto !important;
+     top: 5px !important;
+
+}
+
+.sprocket-lists-title .indicator {
+    left: 10px;
+    right: auto !important;
+
+}
+
+
+.sprocket-lists-image {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.sprocket-tabs-nav li {
+    float: right;
+    margin-left: 4px;
+    margin-right: 0;
+}
+
+
+.sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-order {
+    float: left;
+}
+
+.sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-filter {
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extention
+----------------------------------------------------------------------------------------------------*/
+i {
+    padding-left: 5px;
+    padding-right: 0;
+}
+
+
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child {border-radius: 0 4px 4px 0;}
+
+
+div.k2ItemsBlock ul li span.moduleItemHits {
+    border-left: 0 none;
+    margin: 0 0 0 8px;
+    padding: 0 0 0 4px;
+}
+
+
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+    border: 0 none;
+    float: right;
+    margin: 4px 0 4px 15px;
+}
+
+
+div.latestItemReadMore i {
+    float: right;
+    line-height: 25px;
+}
+
+
+
+div.catItemImageBlock {
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+div.catItemHeader span.catItemAuthor {
+    padding: 0 0 0 10px;
+}
+
+
+
+div.itemToolbar ul li {
+    border-left: 0 none;
+    border-right: 1px solid #CCCCCC;
+    padding: 0 10px 0 4px;
+}
+
+div.itemToolbar ul {text-align: right;}
+
+div.itemListCategory img {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+
+
+div.itemfooter ul li {
+    border-left: 0 none;
+    border-right: 1px solid #CCCCCC;
+    padding: 0 8px 0 4px;
+}
+
+
+div.itemTwitterButton {
+    float: right;
+    margin: 2px 0 0 24px;
+}
+
+
+
+
+div.itemFacebookButton {
+    float: right;
+    margin-left: 24px;
+    margin-right: 0;
+}
+
+
+div.itemAuthorBlock img.itemAuthorAvatar {
+    float: right;
+    margin: 0 0 0 8px;
+}
+
+.latestItemsContainer h2.latestItemTitle {font-size: 15px;}
+
+h2.latestItemTitleList {font-size: 13px;}
+
+/* Other
+----------------------------------------------------------------------------------------------------*/
+.column-layout i {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.box i {
+    float: right;
+    margin: 0 10px;
+}
+
+ul.slides {float: left;}
+
+
+
+/* Breadcrumbs
+----------------------------------------------------------------------------------------------------*/
+ul#breadcrumbs-system li {    float: right;}
+ul#breadcrumbs-system li span:not(.arrow) {
+    padding: 10px 30px 10px 10px;
+}
+
+ul#breadcrumbs-system li .arrow {
+    background: url("../../images/rtl/light-arrow.png") no-repeat scroll right top transparent;
+    left: -20px;
+    right: auto;
+}
+
+
+		ul#breadcrumbs-system li:hover .arrow{background: url("../../images/rtl/light-arrow.png") no-repeat right center;}
+		ul#breadcrumbs-system li:active .arrow{background: url("../../images/rtl/light-arrow.png") no-repeat right bottom;}
+
+
+ul#breadcrumbs-system li.lastlink { padding: 10px 30px 0 10px;}
+
+ul#breadcrumbs-system li.unique-cat span {
+    line-height: 24px;
+}
+
+/* article system
+-----------------*/
+#system .items > .width50 .title {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+
+
+
+/* Modules
+-----------------*/
+
+.module .badge {
+	background: url(../../images/rtl/module_badges.png) 0 0 no-repeat;
+}
+
+
+.module .badge {
+    left: 10px;
+    right: auto;
+}
+.module .badge-hot { background-position: 0 0; }
+.module .badge-top { background-position: 0 -35px; }
+.module .badge-free { background-position: 0 -70px; }
+.module .badge-new { background-position: 0 -105px; }
+
+
+
+
+/* new in wordpress */
+
+#footer .warp-branding {
+ padding-left: 50px;
+    padding-right: 15px;
+}
+
+
+#system .item div.item-footer .more {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+
+#system .item > header .meta span {
+    margin-left: 0;
+    margin-right: 8px;
+}

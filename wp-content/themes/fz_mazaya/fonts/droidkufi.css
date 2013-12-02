@@ -1,0 +1,13 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@font-face {
+	font-family: 'DroidKufi';
+	src: url('droidKufi-regular-webfont.eot');
+	src: url('droidKufi-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('droidKufi-regular-webfont.woff') format('woff'),
+		url('droidKufi-regular-webfont.ttf') format('truetype'),
+		url('droidKufi-regular-webfont.svg#DroidKufi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

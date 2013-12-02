@@ -1,0 +1,12 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@font-face {
+	font-family: 'Crete Round';
+	src: url('creteround-webfont.eot');
+	src: url('creteround-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('creteround-webfont.woff') format('woff'),
+		 url('creteround-webfont.ttf') format('truetype'),
+		 url('creteround-webfont.svg#creteround-webfont') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

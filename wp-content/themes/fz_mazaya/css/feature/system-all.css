@@ -1,0 +1,379 @@
+
+/* General
+----------------------------------------------------------------------------------------------------*/
+
+#system .width50 h1.title {
+    font-size: 22px;
+    margin-top: 0;
+}
+#system .item h1.title {
+    font-size: 26px;
+    font-weight: bold;
+}
+/* Item
+----------------------------------------------------------------------------------------------------*/
+#system .item .full-image { margin-bottom: 15px }
+/**********************************/
+#hotimage { position: relative }
+#hotimage .itemcategory {
+    background: none repeat scroll 0 0 rgba(126, 183, 94, 0.8);
+    bottom: 20px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 0 0 -20px;
+    padding: 5px 20px;
+    position: absolute;
+    z-index: 9;
+}
+#hotimage p.meta {
+    margin: 0;
+    padding: 0;
+}
+#hotimage .itemcategory a { color: #FFFFFF }
+/**********************************/
+.isblog #system .item,
+.noblog #system .item {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+#system .items .item:first-child { border-width: 1px }
+/*#system .item > header .meta a { color: #858585; }
+#system .item > header .meta a:hover { color: #dd512e; }*/
+/* Items
+----------------------------------------------------------------------------------------------------*/
+#system .items .item { margin: 15px 10px }
+#system .items { margin: 0 -10px }
+#system .items.gridalicious .item {
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Featured Article
+----------------------------------------------------------------------------------------------------*/
+#page #system .item .featured-image {
+    display: block;
+    margin: 0 -15px;
+     max-height: auto;}
+     
+/*div#system .width50 a.featured-image { max-height: 190px; }
+div#system .width50 a.featured-image img { max-height: 190px; }*/
+
+
+.wp-front_page div#system .width100 a.featured-image { max-height: 360px; }
+.wp-front_page div#system .width100 a.featured-image img { max-height: 360px; }
+
+
+
+
+
+
+#system .post h1.title {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    background: url(../../images/style/stripes-border.png) 0 100% repeat-x;
+}
+#system .items h1.title {
+    background: none;
+    padding-bottom: 0;
+}
+.isblog #system .items .item:first-child,
+.noblog #system .items .item:first-child {
+    /*margin-top: 10px;*/
+    padding-top: 15px;
+}
+/* Pagination
+----------------------------------------------------------------------------------------------------*/
+#system .pagination a.next,
+#system .pagination a.previous,
+#system .pagination a.first,
+#system .pagination a.last { background-image: url(../../images/style/pagination.png) }
+#system .pagination { margin-bottom: 10px }
+#system .pagination a,
+#system .pagination strong,
+#system .pagination a.previous,
+#system .pagination a.next {
+    height: 30px;
+    width: 30px;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 30px;
+}
+#system .pagination a { color: #969696 }
+#page #system .pagination a:active {
+    color: #666;
+    border-color: #666;
+}
+#system .pagination a.next,
+#system .pagination a.previous,
+#system .pagination a.first,
+#system .pagination a.last {
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    text-indent: -80px;
+}
+#system .pagination a.next:hover { background-position: 50% -50px }
+#system .pagination a.next:active { background-position: 50% -100px }
+#system .pagination a.previous { background-position: 50% -300px }
+#system .pagination a.previous:hover { background-position: 50% -350px }
+#system .pagination a.previous:active { background-position: 50% -400px }
+#system .pagination a.first { background-position: 50% -450px }
+#system .pagination a.first:hover { background-position: 50% -500px }
+#system .pagination a.first:active { background-position: 50% -550px }
+#system .pagination a.last { background-position: 50% -150px }
+#system .pagination a.last:hover { background-position: 50% -200px }
+#system .pagination a.last:active { background-position: 50% -250px }
+#system .pagination strong {
+    color: #666;
+    border-color: #969696;
+}
+
+
+
+
+#system .wp-link-pages a, #system .wp-link-pages strong {
+ border: 1px solid #DDDDDD;
+    border-radius: 50% 50% 50% 50%;
+    color: #969696;
+    margin: 0;
+    padding: 2px 6px;
+    font-weight: normal;
+}
+
+
+#system .wp-link-pages p {
+font-weight: bold;
+}
+
+
+
+#system .wp-link-pages a:hover {
+background: #eee;
+}
+
+
+/* links
+----------------------------------------------------------------------------------------------------*/
+#system .item > .links a {
+    padding: 6px 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+#system .items > .width50 .title {
+    font-size: 18px;
+    line-height: 28px;
+}
+/* post meta info
+----------------------------------------------------------------------------------------------------*/
+#system .item > header .meta,
+#system .item > header .subtitle,
+#related p.meta span {
+    color: #666;
+    font-size: 10px;
+    line-height: 20px;
+}
+#system .item > header .meta span { margin-left: 8px }
+#system .item > header .meta { margin-left: -8px }
+#system .item div.item-footer {
+    background-color: #f4f4f4;
+    background-image: -webkit-gradient(radial, 50% 50%,0,50% 50%,200, from(#fefefe), to(#f4f4f4));
+    background-image: -webkit-radial-gradient(50% 50%, #f4f4f4, #fefefe);
+    background-image: -moz-radial-gradient(50% 50%, #f4f4f4, #fefefe);
+    background-image: -o-radial-gradient(50% 50%, #f4f4f4, #fefefe);
+    background-image: -ms-radial-gradient(50% 50%, #f4f4f4, #fefefe);
+    background-image: radial-gradient(50% 50%, #f4f4f4, #fefefe);
+    border-top: 1px solid #DDDDDD;
+    margin: 10px -15px -15px;
+    padding: 10px 12px;
+}
+#system .item div.item-footer p {
+    margin: 0;
+    padding: 0;
+}
+#system .item div.item-footer .more { margin-left: 15px }
+/* post type gallery video links .....etc
+----------------------------------------------------------------------------------------------------*/
+#system div.post-type { position: relative }
+#system div.post-type span {
+
+    bottom: 15px;
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+#system .list-layout div.post-type span { bottom: 15px;
+    left: 15px; }
+#system div.width50 .list-layout div.post-type span { bottom: 25px }
+#system div.post-type span { background: url(../../images/style/post-type-icons.png) 50% 0 no-repeat }
+#system div.post-type span.image { background: url(../../images/style/post-type-icons.png) 50% -24px no-repeat }
+#system div.post-type span.video { background: url(../../images/style/post-type-icons.png) 50% -48px no-repeat }
+#system div.post-type span.link { background: url(../../images/style/post-type-icons.png) 50% -72px no-repeat }
+#system div.post-type span.audio { background: url(../../images/style/post-type-icons.png) 50% -96px no-repeat }
+#system div.post-type span.gallery { background: url(../../images/style/post-type-icons.png) 50% -120px no-repeat }
+/* error to fix */
+
+
+
+
+
+
+/*  Tags */
+.itemtag a, .tagcloud li{
+    background-color: #F8F8F8;
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 1px 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    line-height: 1.8em;
+    margin: 5px;
+    padding: 2px 15px 2px 25px;
+    position: relative;
+    text-decoration: none;
+}
+.itemtag a::before, .tagcloud li::before {
+    background-color: #f4f4f4;
+    background-image: -webkit-linear-gradient(90deg, hsla(0,0%,0%,.05), hsla(0,0%,0%,.01));
+    border: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: -9px;
+    height: 18px;
+    width: 18px;
+    -webkit-transform: rotate(45deg);
+    z-index: -1;
+}
+.itemtag a::after, .tagcloud li::after {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(90deg, hsla(0,0%,0%,.1), hsla(0,0%,0%,.25));
+    box-shadow: inset 0 1px 0 hsla(0,0%,0%,.5), 0 1px 0 hsla(0,0%,100%,0.5);
+    border-radius: 100%;
+    border: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    height: 6px;
+    width: 6px;
+}
+.itemtag a:hover, .tagcloud li:hover,
+.itemtag a:hover::before, .tagcloud li:hover::before { background-image: -webkit-linear-gradient(90deg, hsla(0,0%,0%,.08),hsla(0,0%,0%,.03)) }
+.itemtag a:hover::after, .tagcloud li:hover::after { background-color: #aaa }
+.itemtag a:active, .tagcloud li:active,
+.itemtag a:active::before {
+    background-image: -webkit-linear-gradient(90deg, hsla(0,0%,0%,.15), hsla(0,0%,0%,.12));
+    color: #333;
+    text-shadow: 0 1px 0 hsla(0,0%,100%,.15);
+}
+
+
+
+
+
+
+
+
+
+
+/* Tag Cloud in modules
+----------------------------------------------------------------------------------------------------*/
+.tagcloud .weight1 a,
+.tagcloud .weight2 a, 
+.tagcloud .weight3 a ,
+.tagcloud .weight4 a,
+.tagcloud .weight5 a ,
+.tagcloud .weight6 a ,
+.tagcloud .weight7 a ,
+.tagcloud .weight8 a ,
+.tagcloud .weight9 a ,
+.tagcloud .weight10 a 
+{ font-size: 100% !important;  letter-spacing: 0px !important; color:#666;}
+
+
+ul.tagcloud li {
+margin: 4px !important;
+float: left;}
+
+
+
+
+
+
+
+/* comments */
+#system #respond textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 1px 2px 0 rgba(180, 180, 180, 0.3);
+    height: 100px;
+    max-width: 550px;
+    width: 100%;
+}
+/* Image captiontext */
+.wp-caption-text { font-size: 100%; }
+.widgetContent .posts_images {
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.posts_images .widgetPostImage {
+    background: none repeat scroll 0 0 #FAFAFA;
+    float: left;
+    height: 65px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 0;
+    width: 75px;
+}
+.posts_images .widgetPostImage a img {
+    height: 65px;
+    width: 75px;
+}
+/* Facebook box */
+.facebook-box iframe { width: 100% !important }
+._4s7c { border: 1px solid transparent !important }
+
+
+
+
+
+ 
+/* sticky Posts */
+
+#system  div.sticky .item { background: #fbfbfb; }
+
+/* Gallery caption */
+.wp-caption .wp-caption-text,
+.gallery-caption,
+.entry-caption {
+	font-style: italic;
+}
+
+li.bypostauthor cite span {
+	color: #fff;
+	background-color: #21759b;
+	background-image: none;
+	border: 1px solid #1f6f93;
+	border-radius: 2px;
+	box-shadow: none;
+	padding: 0;
+}
+
+
+
+/* Search */
+
+.searchbox .results li.result  {
+    text-indent: 2px;
+    padding: 10px 15px !important;
+}

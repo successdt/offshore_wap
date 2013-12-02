@@ -1,0 +1,38 @@
+
+
+/* Mazaya flickr Widget
+----------------------------------------------------------------------------------------------------*/
+.flickr-widget .flickr_badge_image img,
+.news-pic .post-thumbnail img {
+    height: auto;
+    width: 66px;
+}
+.flickr-widget .flickr_badge_image,
+.news-pic .post-thumbnail {
+    float: left;
+    margin: 2px;
+}
+.widgetPostImage img.wp-post-image {
+    float: left;
+    height: auto;
+    margin: 2px;
+    width: 66px;
+}
+/* Mazaya flickr Widget
+----------------------------------------------------------------------------------------------------*/
+.cat-post-item img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+#cat-post-item ul { padding: 0 }
+#cat-post-item li { list-style: none }
+#cat-post-item li.cat-post-item h4 {
+    font-size: 14px;
+    margin: 0;
+}
+#cat-post-item li.cat-post-item a { color: #666 }
+#cat-post-item p.meta {
+    font-size: 10px;
+    margin: 0;
+}
+
