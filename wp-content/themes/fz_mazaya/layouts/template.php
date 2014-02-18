@@ -123,7 +123,8 @@ include($this['path']->path('layouts:template.config.php'));
 	 
 	   <div id="headerbar" class="clearfix">
 	
-			<a id="logo" class="<?php echo $this['config']->get('logo_class'); ?> size-auto" href="<?php echo $this['config']->get('logo_url'); ?>"><img src="<?php echo $this['config']->get('costumlogo'); ?>" alt="<?php echo $this['config']->get('site_name'); ?>" title="<?php echo $this['config']->get('site_name'); ?>">   <h1> <?php echo $this['config']->get('site_name'); ?></h1> </a>
+			<a id="logo" class="<?php echo $this['config']->get('logo_class'); ?> size-auto" href="<?php echo $this['config']->get('logo_url'); ?>"><img src="<?php echo $this['config']->get('costumlogo'); ?>" alt="<?php echo $this['config']->get('site_name'); ?>" title="<?php echo $this['config']->get('site_name'); ?>">   
+			<?php /*<h1> <?php echo $this['config']->get('site_name'); ?></h1> </a>*/ ?>
 
 				<?php if ($this['modules']->count('logo')) : ?>	
 				<a id="logo" href="<?php echo $this['config']->get('site_url'); ?>"><?php echo $this['modules']->render('logo'); ?></a>
